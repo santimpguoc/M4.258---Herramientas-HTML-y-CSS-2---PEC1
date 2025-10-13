@@ -1,21 +1,21 @@
-0) Asegura que pec1 está al día en remoto
+# Asegura que pec1 está al día en remoto
 
 git checkout pec1
-git status            # si hay cambios, haz commit
+git status           
 git push origin pec1
 
-1) Fusiona pec1 → main
+# Fusiona pec1 → main
 
 git checkout main
 git fetch origin
 git pull --ff-only origin main
 git merge --no-ff pec1          
 # si hay conflictos: resuélvelos, luego:
-# git add <archivos>
+# git add .
 # git commit
 git push origin main
 
-2) Sigue trabajando en pec1
+# Sigue trabajando en pec1
 
 
 git checkout pec1
