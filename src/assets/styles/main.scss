@@ -13,7 +13,22 @@
  * It's a best practice to use a different partial for each page
  */
 
- @use "layouts/home";
+//@use "layouts/home";
+
+/* Exponer variables globales */
+@use 'settings' as *;
+
+/* Tools con namespace */
+@use 'tools/functions' as fn;
+@use 'tools/mixins' as mx;
+
+/* Capas que emiten CSS */
+@use 'generic/reset';
+@use 'elements/base';
+@use 'objects/home';
+@use 'utilities/helpers';
+
+
 
 /**
  * Do NOT include anything else in this file!
