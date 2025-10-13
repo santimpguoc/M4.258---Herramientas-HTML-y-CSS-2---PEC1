@@ -16,7 +16,7 @@
 // @use "layouts/home";
 
 /* Exponer variables globales */
-@use 'settings' as *;
+@use 'settings/variables';
 
 /* Tools con namespace */
 // @use 'tools/functions' as fn;
