@@ -1,10 +1,6 @@
 {
   "extends": [
     "stylelint-config-standard-scss",
-    "stylelint-config-prettier"
-  ],
-  "plugins": ["stylelint-order"],
-  "rules": {
-    "order/properties-order": null
-  }
+    "stylelint-config-recess-order"
+  ]
 }
