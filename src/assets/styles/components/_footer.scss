@@ -1,0 +1,33 @@
+/* Pie de página */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.site-footer {
+  background: $color-arena;
+  border-top: 1px solid $color-borde;
+
+  &__inner {
+    @include container($container-max, $space-md);
+    display: flex;
+    gap: $space-md;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: $space-md;
+    flex-wrap: wrap;
+  }
+
+  &__text { 
+    margin: 0 auto; 
+  }
+
+  &__top {
+    text-decoration: none;
+    background: $color-brand;
+    color: #fff;
+    padding: .4rem .7rem;
+    border-radius: $radius-sm;
+
+    &:hover { background: $color-brand-osc; }
+  }
+}

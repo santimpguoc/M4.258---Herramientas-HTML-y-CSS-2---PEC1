@@ -1,0 +1,22 @@
+/* Bloque de introducción de la portada */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.hero {
+  background: $color-arena;
+  padding-block: $space-xl;
+
+  &__inner { @include container($container-max, $space-md); }
+
+  &__title {
+    font-size: $fs-h1;
+    margin-bottom: $space-sm;
+    color: $color-texto;
+  }
+
+  &__text {
+    max-width: 100%;
+    margin-bottom: $space-sm;
+  }
+}

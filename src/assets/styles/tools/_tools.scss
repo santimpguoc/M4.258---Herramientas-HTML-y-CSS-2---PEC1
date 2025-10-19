@@ -1,0 +1,57 @@
+// ======================================================
+// Tools: funciones de "código" SCSS reutilizables
+// para evitar repetir código.
+// =======================================================
+
+@use "sass:map";
+@use "sass:math";
+@use "../settings/settings" as *;
+
+// Función rem(): pasar píxeles a rem de forma rápida.
+@function rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+}
+
+// Mixin para atajos para puntos de corte.
+$tools-breakpoints: (
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xl: $bp-xl
+);
+
+@mixin respond($key) {
+  $value: map.get($tools-breakpoints, $key);
+  @if $value {
+    @media (min-width: $value) { @content; }
+  } @else {
+    @warn 'Breakpoint "#{$key}" no encontrado en $tools-breakpoints.';
+  }
+}
+
+// Mixin visually-hidden: oculta a la vista pero accesible
+// se utiliza para el botón de volver arriba, oculto inicialmente.
+@mixin visually-hidden() {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// Mixin fluid-type: tamaño de texto que crece de forma suave
+// entre dos anchos de pantalla (útil para títulos).
+@mixin fluid-type($clamp-value) {
+  font-size: $clamp-value;
+}
+
+// Mixin container: limita el ancho y añade padding lateral.
+@mixin container($max: 1200px, $pad: var(--space-md)) {
+  max-width: $max;
+  margin-inline: auto;
+  padding-inline: $pad;
+}

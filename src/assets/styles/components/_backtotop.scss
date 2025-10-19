@@ -1,0 +1,37 @@
+/* Botón flotante volver arriba */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.backtotop {
+  position: fixed;
+  right: $space-md;
+  bottom: $space-md;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid $color-borde;
+  background: #fff;
+  color: $color-texto;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s ease, transform .15s ease;
+
+  &:hover { transform: translateY(-1px); }
+
+  /* cuando el JS añade esta clase, aparece y se puede pulsar */
+  &.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* icono dentro del botón */
+  &__icon {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+}

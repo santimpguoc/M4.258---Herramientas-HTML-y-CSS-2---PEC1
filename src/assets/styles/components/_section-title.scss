@@ -1,0 +1,21 @@
+/* Título común de sección */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.section__title {
+  font-size: $fs-h2;
+  margin-bottom: $space-md;
+  position: relative;
+
+  /* subrayado corto con el color de caracteristico */
+  &::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3px;
+    background: $color-brand;
+    margin-top: $space-xs;
+    border-radius: $radius-sm;
+  }
+}

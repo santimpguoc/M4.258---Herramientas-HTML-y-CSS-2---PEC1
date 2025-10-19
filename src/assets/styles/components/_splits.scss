@@ -1,0 +1,27 @@
+/* Ajustes visuales extra para el layout a dos columnas */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.o-split {
+  gap: $space-lg;
+
+  &__content {
+    display: grid;
+    align-content: start;
+    gap: $space-sm;
+  }
+
+  &__media .media__img {
+    width: 100%;
+    display: block;
+    border-radius: $radius-md;
+  }
+
+  /* separadores entre bloques “o-split” dentro de una misma sección */
+  & + .o-split {
+    margin-top: $space-lg;
+    padding-top: $space-lg;
+    border-top: 1px solid $color-borde;
+  }
+}

@@ -1,0 +1,33 @@
+// ===============================================
+// Generic (estilos base comunes)
+// ===============================================
+
+@use "../settings/settings" as *;
+
+// “Caja” más predecible en todo el sitio
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+// Eliminación de márgenes por defecto y establecimiento de estilos base para el body
+body {
+  margin: 0;
+  background: $color-fondo;
+  color: $color-texto;
+  font-family: $font-base;
+  line-height: $lh-base;
+  font-size: $fs-base;
+}
+
+// Imágenes y medios
+img, svg, video, canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Enlaces
+a {
+  color: inherit;
+  text-decoration: none;
+}
