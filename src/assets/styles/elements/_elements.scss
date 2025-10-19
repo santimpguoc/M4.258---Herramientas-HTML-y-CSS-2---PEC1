@@ -27,15 +27,6 @@ p {
 strong { font-weight: 700; }
 em { font-style: italic; }
 
-// Listas
-ul, ol {
-  padding-left: $space-xl; // sangría usando nuestro espaciado
-  margin-block: 0 $space-md;
-}
-li + li {
-  margin-top: $space-xs; // separación entre puntos de lista
-}
-
 // Figuras e imágenes con pie
 img { 
   max-width: 100%; 
