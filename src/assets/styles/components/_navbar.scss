@@ -12,6 +12,7 @@
 
   &__inner {
     @include container($container-max, $space-md);
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +45,9 @@
       transition: background .15s ease, border-color .15s ease;
     }
 
-    &:hover { background: $color-arena; }
+    &:hover { 
+      background: $color-arena; 
+    }
 
     &-bar {
       display: block;
@@ -122,11 +125,9 @@
     }
   }
 
-  /* Visibilidad del toggle según tamaño */
-  &__toggle { display: inline-flex; }
-
   @include respond(lg) {
     &__toggle { display: none; }
+
     /* En escritorio, aunque el <nav> tenga hidden por HTML, lo forzamos visible en layout */
     &__menu[hidden] { display: flex !important; }
   }

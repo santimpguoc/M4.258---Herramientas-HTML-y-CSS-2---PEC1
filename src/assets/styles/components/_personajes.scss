@@ -3,14 +3,11 @@
 
 /* Ajustes SOLO para la sección de Personajes */
 .personajes {
-
   /* Cada bloque (artículo) de la lista */
   .personajes__item {
-
     /* En móvil todo se queda igual (100% ancho).
        Reducimos SOLO en pantallas medianas o mayores. */
     @include respond(md) {
-
       /* Centra la figura dentro de su columna */
       .o-split__media {
         display: flex;

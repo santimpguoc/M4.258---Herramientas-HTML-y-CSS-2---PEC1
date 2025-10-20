@@ -26,6 +26,7 @@
   @include respond(md) {
     grid-template-columns: repeat(2, 1fr);
   }
+
   @include respond(lg) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -40,6 +41,7 @@
   @include respond(md) {
     grid-template-columns: repeat(2, 1fr);
   }
+
   @include respond(lg) {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -67,6 +69,7 @@
 .o-media__img {
   width: 100%;
   height: auto;
+
   /* Tamaño máximo de miniatura fluido, no fijo */
   max-width: clamp(8rem, 100vw, 12rem);
   border-radius: $radius-sm;

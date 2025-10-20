@@ -9,6 +9,7 @@
 
   &__inner {
     @include container($container-max, $space-md);
+
     display: flex;
     gap: $space-md;
     align-items: center;
