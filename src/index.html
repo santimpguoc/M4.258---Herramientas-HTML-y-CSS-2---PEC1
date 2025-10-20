@@ -5,17 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Córdoba – Guía rápida</title>
   <meta name="description" content="Guía breve para descubrir Córdoba: historia, imprescindibles, clima, gastronomía y fiestas." />
-<<<<<<< HEAD
-  <!-- Parcel compilará este SCSS cuando añadamos estilos -->
-  <link rel="stylesheet" href="./assets/styles/main.scss">
-</head>
-<body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar__inner">
-      <a class="navbar__brand" href="#intro" aria-label="Ir al inicio">Córdoba</a>
-      <nav class="navbar__menu" aria-label="Navegación principal">
-=======
   <link rel="stylesheet" href="./assets/styles/main.scss">
   <script src="./assets/scripts/menu.js" defer></script>
 </head>
@@ -34,7 +23,6 @@
       </button>
 
       <nav id="main-menu" class="navbar__menu" aria-label="Navegación principal" hidden>
->>>>>>> pec1
         <a class="navbar__link navbar__link--active" href="#intro" aria-current="page">Intro</a>
         <a class="navbar__link" href="#lugares">Imprescindibles</a>
         <a class="navbar__link" href="#historia">Historia</a>
@@ -46,158 +34,6 @@
         <a class="navbar__link" href="#personajes">Personajes</a>
         <a class="navbar__link" href="#info">Información</a>
       </nav>
-<<<<<<< HEAD
-    </div>
-  </header>
-
-  <!-- PORTADA -->
-  <section class="portada" id="intro">
-    <div class="portada__inner">
-      <h1 class="portada__title">Descubre Córdoba</h1>
-      <p class="portada__text">
-        Córdoba combina un casco histórico excepcional de trazado romano y andalusí con la Mezquita-Catedral como hito universal.
-        Se trata de una de las pocas ciuidades cuyo casco histórico completo es Patrimonio de la Humanidad por la UNESCO. 
-        No solo esto, sino que, a pocos kilómetros de este casco histórico encontramos también los restos de Medina Azahara, ciudad califal declarada también Patrimonio de la Humanidad por la UNESCO.
-      </p>
-      <p class="portada__text">
-        Esta localidad andaluza ofrece una rica experiencia cultural, gastronómica y festiva, siendo un destino imprescindible para quienes buscan sumergirse en la historia y tradiciones españolas.
-        Además, sirve de entrada para conocer el resto de Andalucía si viajamos desde el centro de España.
-      </p>
-      <p class="portada__text">
-        Su tamaño y geografía la hacen ideal para explorarla a pie, permitiendo a los visitantes disfrutar de sus calles, plazas, monumentos históricos, cultura, gastronomía y de sus "gestes" sin prisas.
-      </p>
-      <a class="portada__cta" href="#lugares">Ver imprescindibles</a>
-    </div>
-  </section>
-
-  <!-- LUGARES IMPRESCINDIBLES (tarjetas) -->
-  <main id="lugares" class="o-container section lugares" aria-labelledby="lugares-title">
-    <h2 id="lugares-title" class="section__title">Imprescindibles</h2>
-
-    <div class="o-grid cards" role="list">
-      <!-- Mezquita–Catedral -->
-      <a class="card" role="listitem" href="#mon-mc">
-        <figure class="card__media">
-          <img class="card__img" src="./assets/images/mezquita-catedral.jpg" alt="Arcos y columnas de la Mezquita–Catedral de Córdoba">
-          <figcaption class="card__caption">
-            <span class="card__caption-text">Mezquita–Catedral</span>
-            <span class="credit">
-              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/1/15/Mosque_Cordoba.jpg"
-              rel="noopener nofollow" target="_blank">vía Wikimedia Commons</a></cite>.
-              Licencia: <a href="https://creativecommons.org/licenses/by/3.0/"
-              rel="license noopener" target="_blank">CC BY-SA 3.0</a>
-            </span>
-          </figcaption>
-        </figure>
-        <p class="card__text">
-          Icono de Córdoba: superposición de arte omeya y templo catedralicio.
-        </p>
-      </a>
-
-      <!-- Alcázar de los Reyes Cristianos -->
-      <a class="card" role="listitem" href="#mon-alcazar">
-        <figure class="card__media">
-          <img class="card__img" src="./assets/images/alcazar-reyes-cristianos.jpg" alt="Jardines y murallas del Alcázar de los Reyes Cristianos">
-          <figcaption class="card__caption">
-            <span class="card__caption-text">Alcazar de los Reyes Cristianos</span>
-            <span class="credit">
-              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/c/c4/Alc%C3%A1zar_de_los_Reyes_Cristianos%2C_C%C3%B3rdoba.jpg"
-              rel="noopener nofollow" target="_blank">vía Wikimedia Commons</a></cite>.
-              Licencia: <a href="https://creativecommons.org/licenses/by/3.0/"
-              rel="license noopener" target="_blank">CC BY-SA 3.0</a>
-            </span>
-          </figcaption>
-        </figure>
-        <p class="card__text">
-          Fortaleza-palacio con jardines y vistas al Guadalquivir.
-        </p>
-      </a>
-
-      <!-- La Judería -->
-      <a class="card" role="listitem" href="#mon-juderia">
-        <figure class="card__media">
-          <img class="card__img" src="./assets/images/juderia-cordoba.jpg" alt="Callejuela encalada de la Judería de Córdoba">
-          <figcaption class="card__caption">
-            <span class="card__caption-text">La Judería</span>
-            <span class="credit">
-              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/c/c4/Alc%C3%A1zar_de_los_Reyes_Cristianos%2C_C%C3%B3rdoba.jpg"
-              rel="noopener nofollow" target="_blank">vía Wikimedia Commons</a></cite>.
-              Licencia: <a href="https://creativecommons.org/licenses/by/3.0/"
-              rel="license noopener" target="_blank">CC BY-SA 3.0</a>
-            </span>
-          </figcaption>
-        </figure>
-        <p class="card__text">
-          Barrio histórico de calles blancas y patios, con sinagoga mudéjar.
-        </p>
-      </a>
-
-      <!-- Medina Azahara -->
-      <a class="card" role="listitem" href="#mon-medina">
-        <figure class="card__media">
-          <img class="card__img" src="./assets/images/medina-azahara.jpg" alt="Restos arqueológicos de la ciudad califal de Medina Azahara">
-          <figcaption class="card__caption">
-            <span class="card__caption-text">Medina Azahara</span>
-            <span class="credit">
-              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/d/d4/Medina_Azahara_2009-08-07a.jpg"
-              rel="noopener nofollow" target="_blank">vía Wikimedia Commons</a></cite>.
-              Licencia: <a href="https://creativecommons.org/licenses/by/3.0/"
-              rel="license noopener" target="_blank">CC BY-SA 3.0</a>
-            </span>
-          </figcaption>
-        </figure>
-        <p class="card__text">
-          Ciudad califal a las afueras, Patrimonio Mundial desde 2018.
-        </p>
-      </a>
-    </div>
-  </main>
-
-  <!-- MUSEOS (opcional: también como tarjetas) -->
-  <section id="museos" class="o-container section museos" aria-labelledby="museos-title">
-    <h2 id="museos-title" class="section__title">Museos principales</h2>
-    <div class="o-grid cards" role="list">
-      <!-- Museo Arqueológico -->
-      <a class="card" role="listitem" href="#mus-arqueologico">
-        <figure class="card__media">
-          <img class="card__img" src="./assets/images/museo-arqueologico.jpg" alt="Fachada del Museo Arqueológico de Córdoba">
-          <figcaption class="card__caption">
-            <span class="card__caption-text">Museo Arqueológico</span>
-            <span class="credit">
-              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/8/8c/Museo_Arqueol%C3%B3gico_de_C%C3%B3rdoba_-_Portada.jpg"
-              rel="noopener nofollow" target="_blank">vía Wikimedia Commons</a></cite>.
-              Licencia: <a href="https://creativecommons.org/licenses/by/3.0/"
-              rel="license noopener" target="_blank">CC BY-SA 3.0</a>
-            </span>
-          </figcaption>
-        </figure>
-        <p class="card__text">
-          Colecciones romanas y andalusíes sobre restos del teatro romano.
-        </p>
-      </a>
-
-      <!-- Museo de Bellas Artes -->
-      <a class="card" role="listitem" href="#mus-bellas-artes">
-        <figure class="card__media">
-          <img class="card__img" src="./assets/images/museo-bellas-artes.jpg" alt="Claustro del Museo de Bellas Artes de Córdoba">
-          <figcaption class="card__caption">
-            <span class="card__caption-text">Museo de Bellas Artes</span>
-            <span class="credit">
-              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/a/ac/Museo_de_Bellas_Artes_de_C%C3%B3rdoba_05.JPG"
-              rel="noopener nofollow" target="_blank">vía Wikimedia Commons</a></cite>.
-              Licencia: <a href="https://creativecommons.org/licenses/by/3.0/"
-              rel="license noopener" target="_blank">CC BY-SA 3.0</a>
-            </span>
-          </figcaption>
-        </figure>
-        <p class="card__text">
-          Pintura y escultura desde el Barroco a la actualidad.
-        </p>
-      </a>
-    </div>
-  </section>
-
-=======
     </div>
   </header>
 
@@ -1205,15 +1041,11 @@
 </section>
 
 
->>>>>>> pec1
   <!-- MONUMENTOS (anclas de destino de imprescindibles) -->
   <section id="monumentos" class="o-container section monumentos" aria-labelledby="monumentos-title">
     <h2 id="monumentos-title" class="section__title">Monumentos</h2>
 
-<<<<<<< HEAD
-=======
     <!-- MEZQUITA–CATEDRAL -->
->>>>>>> pec1
     <article id="mon-mc" class="monumento" aria-labelledby="mon-mc-title">
       <h3 id="mon-mc-title" class="monumento__title">Mezquita–Catedral</h3>
 
@@ -1232,11 +1064,7 @@
       <!-- Imagen 1: Sala hipóstila -->
       <figure class="media monumento__media">
         <img class="media__img" src="./assets/images/mc-hipostila.jpg"
-<<<<<<< HEAD
-            alt="Sala hipóstila de la Mezquita–Catedral con arcos bicolores en dos niveles">
-=======
              alt="Sala hipóstila de la Mezquita–Catedral con arcos bicolores en dos niveles">
->>>>>>> pec1
         <figcaption class="media__caption">
           <span class="media__title">Sala hipóstila</span>
           <small class="media__credit">
@@ -1249,15 +1077,9 @@
       <!-- Imagen 2: Mihrab -->
       <figure class="media monumento__media">
         <img class="media__img" src="./assets/images/mc-mihrab.jpg"
-<<<<<<< HEAD
-           alt="Mihrab-cámara con mosaicos dorados y mármoles labrados en la Mezquita–Catedral">
-        <figcaption class="media__caption">
-          <span class="media__title">Sala Miharb</span>
-=======
              alt="Mihrab-cámara con mosaicos dorados y mármoles labrados en la Mezquita–Catedral">
         <figcaption class="media__caption">
           <span class="media__title">Mihrab (s. X)</span>
->>>>>>> pec1
           <small class="media__credit">
             Foto: <cite><a href="https://educahistoria.com/descubre-la-mezquita-de-cordoba-mas-que-un-simbolo-de-fe-un-puente-entre-culturas/" target="_blank" rel="noopener nofollow">educahistoria</a></cite>.
             Licencia: Todos los derechos reservados.
@@ -1267,14 +1089,6 @@
 
       <!-- Imagen 3: Patio y torre -->
       <figure class="media monumento__media">
-<<<<<<< HEAD
-        <img class="media__img" src="./assets/images/mc-exterior-alcazar.jpg"
-          alt="Alcázar de los Reyes Cristianos de Córdoba">
-        <figcaption class="media__caption">
-          <span class="media__title">Sala hipóstila</span>
-          <small class="media__credit">
-            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/0/01/Alc%C3%A1zar_de_los_Reyes_Cristianos_%2814149424950%29.jpg" target="_blank" rel="noopener nofollow">Pablo Trabattoni</a></cite>.
-=======
         <img class="media__img" src="./assets/images/mc-patio-naranjos.jpg"
              alt="Patio de los Naranjos y torre-campanario de la Mezquita–Catedral de Córdoba">
         <figcaption class="media__caption">
@@ -1311,41 +1125,11 @@
           <span class="media__title">Jardines y torres del Alcázar</span>
           <small class="media__credit">
             Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Cordoba-6_%2848026780817%29.jpg" target="_blank" rel="noopener nofollow">Ajay Suresh</a></cite>.
->>>>>>> pec1
             Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
           </small>
         </figcaption>
       </figure>
 
-<<<<<<< HEAD
-    </article>
-
-
-    <article id="mon-alcazar" class="monumento" aria-labelledby="mon-alcazar-title">
-      <h3 id="mon-alcazar-title" class="monumento__title">Alcázar de los Reyes Cristianos</h3>
-      <p class="monumento__text">[Contenido ampliado próximamente.]</p>
-    </article>
-
-    <article id="mon-juderia" class="monumento" aria-labelledby="mon-juderia-title">
-      <h3 id="mon-juderia-title" class="monumento__title">La Judería</h3>
-      <p class="monumento__text">[Contenido ampliado próximamente.]</p>
-    </article>
-
-    <article id="mon-medina" class="monumento" aria-labelledby="mon-medina-title">
-      <h3 id="mon-medina-title" class="monumento__title">Medina Azahara</h3>
-      <p class="monumento__text">[Contenido ampliado próximamente.]</p>
-    </article>
-  </section>
-
-  <!-- INFORMACIÓN PRÁCTICA (resumen) -->
-  <section id="info" class="o-container section info" aria-labelledby="info-title">
-    <h2 id="info-title" class="section__title">Información práctica</h2>
-    <ul class="info__list">
-      <li class="info__item">Mezquita–Catedral: consulta horarios/entradas en la web oficial.</li>
-      <li class="info__item">Transporte: AVE/Avlo; casco histórico a pie.</li>
-      <li class="info__item">Clima: mejor primavera/otoño; revisar AEMET.</li>
-    </ul>
-=======
       <!-- Imagen 2 -->
       <figure class="media monumento__media">
         <img class="media__img" src="./assets/images/alcazar-banos.jpg"
@@ -1484,20 +1268,11 @@
         </figcaption>
       </figure>
     </article>
->>>>>>> pec1
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="o-container site-footer__inner">
-<<<<<<< HEAD
-      <p class="site-footer__text">© Tu Nombre — Créditos y licencias en el documento de entrega.</p>
-      <a class="site-footer__top" href="#intro">Volver arriba</a>
-    </div>
-  </footer>
-</body>
-</html>
-=======
       <p class="site-footer__text">Santiago Martín-Palomo García — PEC 1 - Herramientas HTML y CSS 2 - M4.258 </p>
       <p class="site-footer__text">Máster en Desarrollo de sitos y aplicaciones Web - Universitat Oberta de Catalunya.</p>
     </div>
@@ -1505,4 +1280,3 @@
 
 </body>
 </html>
->>>>>>> pec1
