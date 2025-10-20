@@ -1,0 +1,119 @@
+// ======================================================================
+// Objects: Distribuciones y patrones de maquetación reutilizables
+// Se definen contenedores de elementos, grids y splits sin proporcionar
+// en estilos finales y característicos del sitio.
+// ======================================================================
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+// Contenedor general para limitar ancho y dar padding lateral
+.o-container {
+  @include container($container-max, $gutter);
+}
+
+// Bloques/secciones: aire vertical uniforme
+.section {
+  padding-block: $space-xl;
+}
+
+// Grid genérica para listas de tarjetas u otros bloques
+.o-grid {
+  display: grid;
+  gap: $gutter;
+  grid-template-columns: 1fr;
+
+  @include respond(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Variante de grid pensada para tarjetas (usada en “Imprescindibles” y “Museos”)
+.cards {
+  display: grid;
+  gap: $space-lg;
+  grid-template-columns: 1fr;
+
+  @include respond(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Media Object clásico (imagen a la izquierda, texto a la derecha)
+.o-media-list {
+  display: grid;
+  gap: $space-lg;
+}
+
+/* Objects (ajuste sin px “duros”) */
+.o-media {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-md;
+
+  @include respond(md) {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: $space-lg;
+  }
+}
+
+.o-media__img {
+  width: 100%;
+  height: auto;
+
+  /* Tamaño máximo de miniatura fluido, no fijo */
+  max-width: clamp(8rem, 100vw, 12rem);
+  border-radius: $radius-sm;
+  display: block;
+}
+
+.o-media__body {
+  flex: 1;       /* que el texto ocupe el espacio disponible */
+  min-width: 0;  /* evita desbordes por palabras largas o enlaces */
+}
+
+.o-media__title { margin: 0; }
+
+// Split: dos columnas (texto + media). Se apilan en móvil, a dos col en desktop.
+.o-split {
+  display: grid;
+  gap: $space-lg;
+  grid-template-columns: 1fr; // apilado en móvil
+  align-items: start;
+
+  @include respond(md) {
+    grid-template-columns: 1fr 1fr; // dos columnas desde md
+  }
+}
+
+.o-split__content { 
+  min-width: 0; // evita que contenidos largos rompan la columna (overflow)
+}
+
+.o-split__media   { 
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Texto solo para lectores de pantalla */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

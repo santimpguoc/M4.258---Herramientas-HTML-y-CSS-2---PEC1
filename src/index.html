@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Córdoba – Guía rápida</title>
   <meta name="description" content="Guía breve para descubrir Córdoba: historia, imprescindibles, clima, gastronomía y fiestas." />
+<<<<<<< HEAD
   <!-- Parcel compilará este SCSS cuando añadamos estilos -->
   <link rel="stylesheet" href="./assets/styles/main.scss">
 </head>
@@ -14,6 +15,26 @@
     <div class="navbar__inner">
       <a class="navbar__brand" href="#intro" aria-label="Ir al inicio">Córdoba</a>
       <nav class="navbar__menu" aria-label="Navegación principal">
+=======
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <script src="./assets/scripts/menu.js" defer></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar" data-nav>
+    <div class="navbar__inner">
+      <a class="navbar__brand" href="#intro" aria-label="Ir al inicio">Córdoba</a>
+
+      <!-- Botón hamburguesa (solo visible en móvil/mediana) -->
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu">
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav id="main-menu" class="navbar__menu" aria-label="Navegación principal" hidden>
+>>>>>>> pec1
         <a class="navbar__link navbar__link--active" href="#intro" aria-current="page">Intro</a>
         <a class="navbar__link" href="#lugares">Imprescindibles</a>
         <a class="navbar__link" href="#historia">Historia</a>
@@ -25,6 +46,7 @@
         <a class="navbar__link" href="#personajes">Personajes</a>
         <a class="navbar__link" href="#info">Información</a>
       </nav>
+<<<<<<< HEAD
     </div>
   </header>
 
@@ -175,10 +197,1023 @@
     </div>
   </section>
 
+=======
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="intro">
+    <div class="hero__inner">
+      <h1 class="hero__title">Descubre Córdoba</h1>
+      <p class="hero__text">
+        Córdoba combina un casco histórico excepcional de trazado romano y andalusí con la Mezquita-Catedral como hito universal.
+        Es una de las pocas ciudades cuyo centro histórico completo es Patrimonio Mundial de la UNESCO. A pocos kilómetros,
+        la ciudad califal de Medina Azahara también está declarada Patrimonio Mundial.
+      </p>
+      <p class="hero__text">
+        Esta localidad andaluza ofrece una rica experiencia cultural, gastronómica y festiva, siendo un destino imprescindible
+        para quienes buscan sumergirse en la historia y tradiciones españolas. Además, sirve de entrada para conocer el resto de Andalucía
+        si viajas desde el centro de España.
+      </p>
+      <p class="hero__text">
+        Su tamaño y geografía la hacen ideal para explorarla a pie, permitiendo disfrutar de calles, plazas, monumentos, cultura, gastronomía
+        y de sus gentes sin prisas.
+      </p>
+
+      <figure class="hero__video">
+        <a
+          class="c-video-thumb"
+          href="https://www.youtube.com/watch?v=Us3hTNxtQ18" 
+          target="_blank" 
+          rel="noopener"
+          aria-label="Ver vídeo promocional de Córdoba en YouTube"
+        >
+          <img
+          class="c-video-thumb__img"
+          src="./assets/images/video-cordoba-thumb.jpg"
+          alt="Miniatura del vídeo promocional de la ciudad de Córdoba"
+          loading="lazy"
+          >
+          <span class="c-video-thumb__play" aria-hidden="true"></span>
+          <span class="c-video-thumb__badge">Ver vídeo</span>
+        </a>
+        <figcaption class="c-video-thumb__caption">
+          Vídeo promocional de Córdoba (YouTube) - UNESCO y Patrimonio Mundial en España
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- IMPRESCINDIBLES (tarjetas) -->
+  <main id="lugares" class="o-container section lugares" aria-labelledby="lugares-title">
+    <h2 id="lugares-title" class="section__title">Imprescindibles</h2>
+
+    <div class="o-grid cards" role="list">
+      <!-- Mezquita–Catedral -->
+      <article class="card">
+        <a href="#mon-mc">
+          <figure class="card__media">
+            <img class="card__img" src="./assets/images/mezquita-catedral.jpg" alt="Arcos y columnas de la Mezquita–Catedral de Córdoba">
+            <figcaption class="card__title">
+              Mezquita–Catedral
+            </figcaption>
+          </figure>
+        </a>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/1/15/Mosque_Cordoba.jpg" target="_blank" rel="noopener nofollow">vía Wikimedia Commons</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+        </small>
+        <p class="card__text">Icono de Córdoba: superposición de arte omeya y templo catedralicio.</p>
+      </article>
+
+      <!-- Alcázar de los Reyes Cristianos -->
+      <article class="card">
+        <a href="#mon-alcazar">
+          <figure class="card__media">
+            <img class="card__img" src="./assets/images/alcazar-reyes-cristianos.jpg" alt="Jardines y murallas del Alcázar de los Reyes Cristianos">
+            <figcaption class="card__title">
+              Alcázar de los Reyes Cristianos
+            </figcaption>
+          </figure>
+        </a>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/c/c4/Alc%C3%A1zar_de_los_Reyes_Cristianos%2C_C%C3%B3rdoba.jpg" target="_blank" rel="noopener nofollow">vía Wikimedia Commons</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+        </small>
+        <p class="card__text">Fortaleza-palacio con jardines y vistas al Guadalquivir.</p>
+      </article>
+
+      <!-- La Judería -->
+      <article class="card">
+        <a href="#mon-juderia">
+          <figure class="card__media">
+            <img class="card__img" src="./assets/images/juderia-cordoba.jpg" alt="Callejuela encalada de la Judería de Córdoba">
+            <figcaption class="card__title">
+              La Judería
+            </figcaption>
+          </figure>
+        </a>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/6/67/Calleja_de_las_Flores%2C_C%C3%B3rdoba%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_31-33_HDR.jpg" target="_blank" rel="noopener nofollow">vía Wikimedia Commons</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener">CC BY 4.0</a>
+        </small>
+        <p class="card__text">Barrio histórico de calles blancas y patios, con sinagoga mudéjar.</p>
+      </article>
+
+      <!-- Medina Azahara -->
+      <article class="card">
+        <a href="#mon-medina-azahara">
+          <figure class="card__media">
+            <img class="card__img" src="./assets/images/medina-azahara.jpg" alt="Restos arqueológicos de la ciudad califal de Medina Azahara">
+            <figcaption class="card__title">
+              Medina Azahara
+            </figcaption>
+          </figure>
+        </a>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/d/d4/Medina_Azahara_2009-08-07a.jpg" target="_blank" rel="noopener nofollow">vía Wikimedia Commons</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+        </small>
+        <p class="card__text">Ciudad califal a las afueras, Patrimonio Mundial desde 2018.</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- MUSEOS -->
+  <section id="museos" class="o-container section museos" aria-labelledby="museos-title">
+    <h2 id="museos-title" class="section__title">Museos principales</h2>
+    <div class="o-grid museos-cards">
+      <!-- Museo Arqueológico -->
+      <article class="card">
+        <figure class="card__media">
+          <img class="card__img" src="./assets/images/museo-arqueologico.jpg" alt="Fachada del Museo Arqueológico de Córdoba">
+          <figcaption class="card__title">
+            Museo Arqueológico
+          </figcaption>
+        </figure>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/8/8c/Museo_Arqueol%C3%B3gico_de_C%C3%B3rdoba_-_Portada.jpg" target="_blank" rel="noopener nofollow">vía Wikimedia Commons</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+        </small>
+        <p class="card__text">
+          El Museo Arqueológico es la puerta de entrada ideal a la historia material de Córdoba. Sus salas trazan
+          un recorrido continuo desde los primeros asentamientos hasta el mundo islámico, con especial atención a la
+          <em>Corduba</em> romana: calzadas, domus, epígrafes y esculturas que ayudan a entender cómo era la vida en la ciudad.
+        </p>
+        <p class="card__text">
+          Entre las piezas más llamativas encontrarás mosaicos, cerámicas finas y objetos cotidianos que ilustran oficios,
+          comercio y religiosidad. La museografía pone en contexto los hallazgos con paneles claros y maquetas,
+          de modo que incluso una visita breve deja una idea precisa de las transformaciones urbanas a lo largo de los siglos.
+        </p>
+        <p class="card__text">
+          Su rasgo diferencial es que el edificio integra los restos del antiguo teatro romano <strong>in situ</strong>. Durante la visita
+          puedes asomarte a esa estructura monumental y percibir la escala de los espectáculos públicos en época imperial,
+          una experiencia que conecta el museo con el propio subsuelo arqueológico de la ciudad.
+        </p>
+      </article>
+
+      <!-- Museo de Bellas Artes -->
+      <article class="card">
+        <figure class="card__media">
+          <img class="card__img" src="./assets/images/museo-bellas-artes.jpg" alt="Claustro del Museo de Bellas Artes de Córdoba">
+          <figcaption class="card__title">
+            Museo de Bellas Artes
+          </figcaption>
+        </figure>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/a/ac/Museo_de_Bellas_Artes_de_C%C3%B3rdoba_05.JPG" target="_blank" rel="noopener nofollow">vía Wikimedia Commons</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+        </small>
+        <p class="card__text">
+          El Bellas Artes reúne pintura y escultura desde el Barroco hasta el siglo XX, con presencia de escuelas andaluzas
+          y autores vinculados a la ciudad. La colección permite leer los cambios de gusto, técnica y encargo, desde el
+          retrato devocional hasta los lenguajes modernos.
+        </p>
+        <p class="card__text">
+          La sede histórica —con patios, galerías y un claustro íntimo— aporta un marco arquitectónico que dialoga con las obras.
+          El montaje favorece la cercanía: salas de escala humana, cartelas concisas y un recorrido que invita a detenerse
+          en detalles de factura y en la evolución de los talleres locales.
+        </p>
+        <p class="card__text">
+          Su localización en la Plaza del Potro, junto al Museo Julio Romero de Torres, convierte el entorno en un pequeño
+          distrito cultural. Es recomendable visitar primero el Bellas Artes para situar la producción cordobesa en el conjunto
+          español, y después profundizar en el universo estético de Romero de Torres.
+        </p>
+      </article>
+
+      <!-- Museo Julio Romero de Torres -->
+      <article class="card">
+        <figure class="card__media">
+          <img class="card__img" src="./assets/images/museo-julio-romero.jpg" alt="Fachada del Museo Julio Romero de Torres en la Plaza del Potro">
+          <figcaption class="card__title">
+            Museo Julio Romero de Torres
+          </figcaption>
+        </figure>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/0/0c/Museo_Julio_Romero_de_Torres_-_Patio.jpg" target="_blank" rel="noopener nofollow">Delegación de Cultura Ayto de Córdoba</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+        </small>
+        <p class="card__text">
+          Dedicado al pintor más popular de la ciudad, el museo conserva la colección de referencia sobre su obra: retratos,
+          escenas costumbristas y composiciones de fuerte carga simbólica en las que el mito cordobés se funde con la estética
+          del primer tercio del siglo XX.
+        </p>
+        <p class="card__text">
+          La visita permite reconocer temas recurrentes —la figura femenina, la cultura popular, la iconografía del trabajo—
+          y observar de cerca la técnica, el tratamiento del color y la construcción de la imagen pública del artista.
+          Varias salas temáticas ofrecen un hilo claro para no perderse.
+        </p>
+        <p class="card__text">
+          Ubicado en la Plaza del Potro, comparte entorno con el Bellas Artes y completa la mirada sobre la identidad visual de Córdoba.
+          Si te interesa la historia de la recepción y la cultura de masas, este museo es imprescindible para entender
+          por qué Romero de Torres sigue siendo un icono más allá de lo local.
+        </p>
+      </article>
+
+      <!-- Museo Taurino de Córdoba -->
+      <article class="card">
+        <figure class="card__media">
+          <img class="card__img" src="./assets/images/museo-taurino.jpg" alt="Patio del Museo Taurino de Córdoba en una casa del siglo XVI">
+          <figcaption class="card__title">
+            Museo Taurino
+          </figcaption>
+        </figure>
+        <small class="credit">
+          Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/f/fe/Museo_Taurino_%2824233783339%29.jpg" target="_blank" rel="noopener nofollow">Delegación de Cultura Ayto de Córdoba</a></cite>.
+          Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+        </small>
+        <p class="card__text">
+          Alojado en una casa del siglo XVI, el Museo Taurino revisa la tauromaquia cordobesa desde una perspectiva patrimonial:
+          trajes de luces, capotes, cartelería histórica y fotografías que fijan la memoria de sus grandes figuras.
+        </p>
+        <p class="card__text">
+          Más allá de la crónica de festejos, el discurso propone una lectura cultural y social: el papel del toreo en las fiestas,
+          su proyección en la prensa y las artes visuales, y la relación con otros oficios de la ciudad. Las salas combinan piezas
+          originales con recursos audiovisuales.
+        </p>
+        <p class="card__text">
+          El patio y las galerías restauradas ofrecen un respiro entre salas y conectan el relato museográfico con la arquitectura
+          doméstica tradicional. Es una visita que se integra muy bien con el paseo por la Judería y el entorno monumental cercano.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section id="historia" class="o-container section historia" aria-labelledby="historia-title">
+    <h2 id="historia-title" class="section__title">Historia</h2>
+
+    <div class="historia__content">
+      <p class="historia__text">
+        Córdoba nació mirando al Guadalquivir. La ciudad romana de <em>Corduba</em> fue creciendo desde el siglo II a. C.
+        hasta convertirse en capital de la Bética. De aquella etapa quedan huellas por toda la trama urbana: inscripciones,
+        restos de viviendas, un gran teatro y, sobre todo, el paso del río marcado por el puente romano, que aún hoy
+        sigue siendo una de las puertas de entrada al casco histórico.
+      </p>
+
+      <p class="historia__text">
+        Con al-Ándalus, Córdoba dio un salto. Primero fue sede del Emirato y, en 929, capital del Califato.
+        La ciudad se llenó de talleres, bibliotecas y vida urbana. La gran mezquita —hoy Mezquita–Catedral— creció por fases
+        y a las afueras se levantó Medina Azahara, la ciudad palatina. Fue un momento de intensa actividad artística y científica
+        que dejó una imagen muy clara: una metrópoli abierta y dinámica.
+      </p>
+
+      <p class="historia__text">
+        Tras la conquista cristiana de 1236, la ciudad reorganizó sus espacios y funciones. La mezquita pasó a ser catedral,
+        se trazaron nuevas instituciones y se reforzó el eje monumental de la ribera con el Alcázar de los Reyes Cristianos.
+        Entre la Edad Moderna y la contemporánea, Córdoba fue adaptándose: reformas urbanas, cambios de uso y una mirada cada vez
+        más consciente hacia su patrimonio.
+      </p>
+
+      <p class="historia__text">
+        El reconocimiento internacional llegó en el siglo XX y se ha ampliado en las últimas décadas:
+        la Mezquita–Catedral y el Centro Histórico forman parte del Patrimonio Mundial, Medina Azahara fue inscrita en 2018
+        y la Fiesta de los Patios está reconocida como Patrimonio Inmaterial. En conjunto, son señales de identidad que explican
+        por qué Córdoba conserva, en un mismo paseo, capas romanas, andalusíes y cristianas.
+      </p>
+
+      <figure class="media historia__media">
+        <img class="media__img" src="./assets/images/puente-romano-historico.jpg"
+           alt="El puente romano de Córdoba sobre el Guadalquivir y la ribera histórica">
+        <figcaption class="media__caption">
+          <span class="media__title">Puente romano y ribera</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/0/01/Puente_Romano_Cordoba.jpg" target="_blank" rel="noopener nofollow">Rafesmar</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">CC BY-SA 4.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- UBICACIÓN Y CÓMO LLEGAR -->
+  <section id="ubicacion" class="o-container section ubicacion" aria-labelledby="ubicacion-title">
+    <h2 id="ubicacion-title" class="section__title">Ubicación y cómo llegar</h2>
+
+    <div class="ubicacion__intro u-flow">
+      <p class="ubicacion__text">
+        Córdoba está en el valle del Guadalquivir, entre Sierra Morena y la campiña. Su posición la convierte en un nudo
+        cómodo para moverse por Andalucía y enlazar con Madrid. La mayor parte del casco histórico es peatonal o de tráfico
+        calmado, así que visitar monumentos a pie es lo más práctico.
+      </p>
+    </div>
+
+    <!-- Imagen o mapa con pie -->
+    <figure class="media ubicacion__media">
+      <img class="media__img" src="./assets/images/mapa-cordoba.jpg"
+         alt="Mapa situando Córdoba en Andalucía y su casco histórico junto al Guadalquivir">
+      <figcaption class="media__caption">
+        <span class="media__title">Córdoba en el valle del Guadalquivir</span>
+        <small class="media__credit">
+          Mapa/foto: <cite><a href="https://cordobaturismo.es/plano-de-la-ciudad-de-cordoba/#launch" target="_blank" rel="noopener nofollow">Cordoba turismo</a></cite>.
+        </small>
+      </figcaption>
+    </figure>
+
+    <article class="o-split ubicacion__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="ubicacion__subtitle">En tren (recomendado)</h3>
+        <p class="ubicacion__text">
+          El tren es, por lo general, la forma más rápida y cómoda de llegar. La estación principal se llama
+          <strong>Córdoba–Julio Anguita</strong> (antes “Córdoba Central”). Opera servicios de Alta Velocidad y Media Distancia
+          con conexiones frecuentes hacia Madrid, Sevilla, Málaga y Jaén, entre otros destinos.
+        </p>
+        <p class="ubicacion__text">
+          La estación está en la <em>Glorieta de las Tres Culturas</em>, a unos 15–20 minutos a pie del casco histórico. En la
+          propia terminal tienes taxis y enlaces con bus urbano.
+        </p>
+        <ul class="ubicacion__links">
+          <li><a href="https://www.renfe.com/es/es/inspirate/estaciones/estacion-cordoba-julio-anguita" target="_blank" rel="noopener">Renfe — Estación Córdoba–Julio Anguita</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/estacion-cordoba-julio-anguita.jpg" alt="Exterior de la estación de tren Córdoba–Julio Anguita">
+         <figcaption class="media__caption">
+          <span class="media__title">Estación de Córdoba Julio Anguita</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/3/3d/Estaci%C3%B3n_de_C%C3%B3rdoba-Central.jpg" target="_blank" rel="noopener nofollow">Gzzz</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+          </small>
+        </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="o-split ubicacion__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="ubicacion__subtitle">En autobús</h3>
+        <p class="ubicacion__text">
+          La <strong>Estación de Autobuses de Córdoba</strong> concentra rutas regionales y de media/larga distancia. Está frente a
+          la estación de tren, lo que facilita combinar ambos medios. Desde allí, los buses urbanos conectan con las principales
+          zonas de la ciudad.
+        </p>
+        <p class="ubicacion__text">
+          Si vas a visitar <em>Medina Azahara</em>, existe un <strong>bus diario lanzadera</strong> desde la ciudad hasta el yacimiento
+          arqueológico (consulta horarios y venta de billetes).
+        </p>
+        <ul class="ubicacion__links">
+          <li><a href="https://estacionautobusescordoba.es/" target="_blank" rel="noopener">Estación de Autobuses de Córdoba</a></li>
+          <li><a href="https://www.turismodecordoba.org/bus-diario-a-medina-azahara-cordoba" target="_blank" rel="noopener">Turismo Córdoba — Bus a Medina Azahara</a></li>
+          <li><a href="https://autobusmedinaazahara.com/" target="_blank" rel="noopener nofollow">Bus Diario a Medina Azahara (venta online)</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/estacion-autobuses.jpg" alt="Exterior de la estación de autobuses de Córdoba">
+         <figcaption class="media__caption">
+          <span class="media__title">Estación de Córdoba Julio Anguita</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/1/18/Estaci%C3%B3n_de_Autobuses_de_C%C3%B3rdoba.jpg" target="_blank" rel="noopener nofollow">Antonio Montilla Lucena</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+          </small>
+        </figcaption>
+      </div>
+    </article>
+
+    <article class="o-split ubicacion__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="ubicacion__subtitle">En avión</h3>
+        <p class="ubicacion__text">
+          Córdoba tiene aeropuerto propio (<strong>ODB</strong>). En 2025 se han anunciado operaciones regulares estacionales con
+          algunas rutas; en cualquier caso, lo más habitual sigue siendo volar a <strong>Sevilla</strong> o <strong>Málaga</strong> y
+          completar el trayecto en tren.
+        </p>
+        <p class="ubicacion__text">
+          Comprueba siempre las rutas y temporadas activas antes de planificar. Desde Sevilla/Málaga hay alta frecuencia de trenes
+          AVE/AVANT hacia Córdoba.
+        </p>
+        <ul class="ubicacion__links">
+          <li><a href="https://www.aena.es/es/cordoba.html" target="_blank" rel="noopener">AENA — Aeropuerto de Córdoba (ODB)</a></li>
+          <li><a href="https://www.turismodecordoba.org/como-llegar-a-cordoba-1" target="_blank" rel="noopener">Turismo Córdoba — Cómo llegar (carretera y tiempos)</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/aeropuerto-cordoba.jpg" alt="Pista y edificio del aeropuerto de Córdoba">
+          <figcaption class="media__caption">
+            <span class="media__title">Aeropuerto de Córdoba</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/9/9f/C%C3%B3rdoba_Airport_2.jpg" target="_blank" rel="noopener nofollow">kallena</a></cite>.
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">CC BY-SA 4.0</a>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="o-split ubicacion__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="ubicacion__subtitle">Por carretera (coche)</h3>
+        <p class="ubicacion__text">
+          Córdoba está muy bien conectada por autovía. La <strong>A-4</strong> (Madrid ↔ Sevilla) cruza la ciudad de este a oeste y
+          la <strong>A-45</strong> enlaza con <strong>Málaga</strong>. Hacia <strong>Granada</strong> y la Subbética se usa la
+          <strong>N-432</strong>. Llegar es sencillo, pero el <em>casco histórico</em> tiene calles estrechas, tráfico calmado y
+          <strong>zonas restringidas</strong>, por lo que conviene dejar el coche en el perímetro y continuar a pie o en bus.
+        </p>
+        <p class="ubicacion__text">
+          Consejo práctico: busca <strong>aparcamiento disuasorio</strong> o un <strong>parking público</strong> fuera del casco
+          histórico (zona Vial Norte, Renfe/Glorieta Tres Culturas, Paseo de la Victoria y entorno) y entra caminando.
+          Revisa también la regulación de la <strong>zona azul (ORA)</strong> y posibles restricciones temporales en fiestas.
+        </p>
+        <ul class="ubicacion__links">
+          <li><a href="https://www.turismodecordoba.org/como-llegar-a-cordoba-1" target="_blank" rel="noopener">Turismo Córdoba — Cómo llegar (carretera y tiempos)</a></li>
+          <li><a href="https://infocar.dgt.es/etraffic/" target="_blank" rel="noopener">DGT — Estado del tráfico y incidencias</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/autovia-andalucia.jpg" alt="Autovía de acceso a Córdoba con señalización hacia A-4 y A-45">
+          <figcaption class="media__caption">
+            <span class="media__title">Accesos por autovía</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/e/eb/Autoviadelsur.svg" target="_blank" rel="noopener nofollow">Jotamar derivate work: Galdius</a></cite>.
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">CC BY-SA 4.0</a>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="o-split ubicacion__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="ubicacion__subtitle">Moverse por la ciudad</h3>
+        <p class="ubicacion__text">
+          El casco histórico se recorre a pie. Para distancias mayores, el bus urbano de <strong>AUCORSA</strong> conecta estaciones,
+          barrios y monumentos; puedes consultar líneas, tiempos de espera y recargar la tarjeta desde su web o app oficial.
+        </p>
+        <p class="ubicacion__text">
+          Taxis y VTC operan con normalidad. Si llegas en coche, ten en cuenta las áreas de tráfico restringido del centro y valora
+          aparcar en el perímetro y continuar andando o en bus.
+        </p>
+        <ul class="ubicacion__links">
+          <li><a href="https://aucorsa.es/lineas-y-horarios/" target="_blank" rel="noopener">AUCORSA — Líneas y horarios</a></li>
+          <li><a href="https://www.turismodecordoba.org/plano-de-cordoba" target="_blank" rel="noopener">Turismo Córdoba — Plano-mapa de la ciudad</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/bus-aucorsa.jpg" alt="Autobús urbano de AUCORSA circulando por Córdoba">
+          <figcaption class="media__caption">
+            <span class="media__title">Autobus urbano de Córdoba</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/9/96/Autobus_Aucorsa_%28C%C3%B3rdoba%2C_Espa%C3%B1a%29.jpg" target="_blank" rel="noopener nofollow">Justojosemm</a></cite>.
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+
+  <!-- CLIMA Y MEJOR ÉPOCA -->
+  <section id="clima" class="o-container section clima" aria-labelledby="clima-title">
+    <h2 id="clima-title" class="section__title">Clima y mejor época</h2>
+
+    <div class="clima__content u-flow">
+      <p class="clima__text">
+        Córdoba tiene un clima mediterráneo cálido: inviernos suaves y veranos muy calurosos y secos.
+        Las medias oficiales del observatorio del <strong>Aeropuerto de Córdoba</strong> muestran lluvias concentradas en otoño–invierno
+        y una estación seca marcada entre junio y septiembre. Si te atrae pasear y visitar monumentos con calma,
+        lo más agradable suele ser primavera y otoño.
+      </p>
+
+      <p class="clima__text">
+        En verano (julio–agosto) las máximas pueden ser de las más altas de Europa de forma persistente, con días por encima de 40 °C
+        en algunos episodios; es clave adaptar horarios (mañana temprano y tarde-noche), hidratarte y buscar sombra.
+        AEMET mantiene un plan de prevención por temperaturas extremas y emite avisos oficiales cuando procede.
+      </p>
+
+      <p class="clima__text">
+        Si buscas floración, patios y ambiente festivo, mayo es un mes icónico (Cruces, Patios, Feria). En términos puramente
+        meteorológicos, muchos viajeros eligen <strong>marzo–mayo</strong> y <strong>octubre–noviembre</strong> por temperaturas templadas
+        y luz suave; en pleno verano la visita es posible, pero conviene planificar interiores climatizados al mediodía.
+        (Consejo: madruga, reserva la Mezquita–Catedral a primera hora y deja medianas para museos o descanso).
+
+      <aside class="c-callout" role="note" aria-label="Nota sobre olas de calor">
+        <p class="c-callout__text">
+          Nota reciente: en agosto de 2025 AEMET calificó la ola de calor como una de las más intensas de la serie.
+          Si viajas en verano, consulta avisos y recomendaciones oficiales antes de planificar actividades al aire libre.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- GASTRONOMÍA -->
+  <section id="gastronomia" class="o-container section gastronomia" aria-labelledby="gastronomia-title">
+    <h2 id="gastronomia-title" class="section__title">Gastronomía</h2>
+
+    <p class="gastronomia__intro">
+      La cocina cordobesa combina recetario andalusí, tradición popular y productos de la campiña.
+      Aquí van algunos imprescindibles para orientarte en cartas y tabernas.
+    </p>
+
+    <!-- Salmorejo -->
+    <article class="o-split gastronomia__item">
+      <div class="o-split__media">
+        <figure class="media gastronomia__media">
+          <img class="media__img" src="./assets/images/plato-salmorejo.jpg" alt="Cuenco de salmorejo cordobés con huevo picado y jamón">
+          <figcaption class="media__caption">
+            <span class="media__title">Salmorejo cordobés</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/e/eb/Salmorejo_cordobes.jpg" target="_blank" rel="noopener nofollow">Javier Lastras</a></cite>.
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="o-split__content u-flow">
+        <h3 class="o-media__title">Salmorejo cordobés</h3>
+        <p>
+          Crema fría y densa de tomate, pan, aceite de oliva y ajo. Se sirve bien frío, con huevo duro y jamón por encima.
+          Es plato identitario de la ciudad y el mejor aliado en días calurosos.
+        </p>
+      </div>
+    </article>
+
+    <!-- Mazamorra -->
+    <article class="o-split o-split--reverse gastronomia__item">
+      <div class="o-split__media">
+        <figure class="media gastronomia__media">
+          <img class="media__img" src="./assets/images/plato-mazamorra.jpg" alt="Mazamorra cordobesa blanca con uvas o pasas">
+          <figcaption class="media__caption">
+            <span class="media__title">Mazamorra cordobesa</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://www.bonviveur.es/recetas/mazamorra-cordobesa" target="_blank" rel="noopener nofollow">Damián Serrano</a></cite>.
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="o-split__content u-flow">
+        <h3 class="o-media__title">Mazamorra</h3>
+        <p>
+          Antecesora histórica del salmorejo: crema blanca de almendras, pan, ajo, aceite y vinagre.
+          Suele acompañarse con uvas, pasas o manzana. Sabor suave y textura sedosa.
+        </p>
+      </div>
+    </article>
+
+    <!-- Flamenquín -->
+    <article class="o-split gastronomia__item">
+      <div class="o-split__media">
+        <figure class="media gastronomia__media">
+          <img class="media__img" src="./assets/images/plato-flamenquin.jpg" alt="Flamenquín cordobés cortado en rodajas">
+          <figcaption class="media__caption">
+            <span class="media__title">Flamenquín cordobés</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://www.unileverfoodsolutions.es/receta/flamenquin-cordobes-R90011078.html" target="_blank" rel="noopener nofollow">Unilever Food Solution</a></cite>.
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="o-split__content u-flow">
+        <h3 class="o-media__title">Flamenquín</h3>
+        <p>
+          Rollo de filete de cerdo con jamón curado en su interior, empanado y frito. Crujiente por fuera, jugoso por dentro.
+          Suele servirse en raciones generosas, a veces con variantes (queso, diferentes cortes).
+        </p>
+      </div>
+    </article>
+
+    <!-- Rabo de toro -->
+    <article class="o-split o-split--reverse gastronomia__item">
+      <div class="o-split__media">
+        <figure class="media gastronomia__media">
+          <img class="media__img" src="./assets/images/plato-rabo-toro.jpg" alt="Plato de rabo de toro estofado con salsa oscura">
+          <figcaption class="media__caption">
+            <span class="media__title">Rabo de toro</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/c/ce/Rabo_de_toro.jpg" target="_blank" rel="noopener nofollow">Javier Lastras</a></cite>.
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="o-split__content u-flow">
+        <h3 class="o-media__title">Rabo de toro</h3>
+        <p>
+          Guiso meloso de rabo estofado a fuego lento con vino, verduras y especias. Una receta de cuchara ligada a la
+          tradición taurina y a los fondos de cocina lenta. Ideal en meses templados o fríos.
+        </p>
+      </div>
+    </article>
+
+    <!-- Berenjenas con miel -->
+    <article class="o-split gastronomia__item">
+      <div class="o-split__media">
+        <figure class="media gastronomia__media">
+          <img class="media__img" src="./assets/images/plato-berenjenas-miel.jpg" alt="Bastones de berenjena frita con miel de caña">
+          <figcaption class="media__caption">
+            <span class="media__title">Berenjenas a la miel</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://www.traveler.es/gastronomia/articulos/mejores-berenjenas-con-sin-miel-en-cordoba-receta/14071" target="_blank" rel="noopener nofollow">Traveler.es</a></cite>.
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="o-split__content u-flow">
+        <h3 class="o-media__title">Berenjenas con miel</h3>
+        <p>
+          Bastones de berenjena frita con un toque de miel de caña (o miel de abeja, según la casa).
+          Contraste dulce-salado muy popular como tapa o para compartir.
+        </p>
+      </div>
+    </article>
+
+    <!-- Pastel cordobés -->
+    <article class="o-split o-split--reverse gastronomia__item">
+      <div class="o-split__media">
+        <figure class="media gastronomia__media">
+          <img class="media__img" src="./assets/images/plato-pastel-cordobes.jpg" alt="Pastel cordobés de hojaldre con cabello de ángel">
+          <figcaption class="media__caption">
+            <span class="media__title">Pastel cordobés</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://www.rtve.es/television/20230310/receta-autentico-pastel-cordobes-dulce-cabello-angel/2430584.shtml" target="_blank" rel="noopener nofollow">rtve.es</a></cite>.
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="o-split__content u-flow">
+        <h3 class="o-media__title">Pastel cordobés</h3>
+        <p>
+          Hojaldre relleno de cabello de ángel, a veces con un punto de jamón dulce o frutos secos.
+          Postre tradicional en torno a San Rafael (24 de octubre), aunque hoy se encuentra todo el año.
+        </p>
+      </div>
+    </article>
+
+    <!-- Bebidas -->
+    <aside class="c-callout" role="note" aria-label="Vino y aceite">
+      <p class="c-callout__text">
+        Para acompañar: vinos de la <strong>DO Montilla-Moriles</strong> (fino, amontillado, oloroso, PX) y
+        <strong>aceite de oliva virgen extra</strong> de la campiña cordobesa; ambos forman parte esencial del sabor local.
+      </p>
+    </aside>
+  </section>
+
+  <!-- FIESTAS Y EVENTOS -->
+  <section id="fiestas" class="o-container section fiestas" aria-labelledby="fiestas-title">
+    <h2 id="fiestas-title" class="section__title">Fiestas y eventos</h2>
+
+    <!-- Mayo Festivo -->
+    <article id="mayo-festivo" class="o-split fiestas__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="fiestas__subtitle">Mayo Festivo: Cruces, Patios y Feria</h3>
+        <p class="fiestas__text">
+          Mayo es el mes grande de Córdoba. Comienza con las <strong>Cruces de Mayo</strong>, cuando plazas y rincones se llenan de estructuras florales y barras populares.
+          Los barrios de San Basilio, San Andrés, Santa Marina o San Agustín son imprescindibles para sentir el ambiente. Fechas exactas y planos cambian cada año; consúltalos siempre en la web municipal de turismo.
+        </p>
+        <p class="fiestas__text">
+          A continuación llega la <strong>Fiesta de los Patios</strong>, declarada <em>Patrimonio Cultural Inmaterial</em> por la UNESCO: durante varios días,
+          los patios abren gratuitamente para mostrar su arquitectura popular y un cultivo de plantas único en el mundo. Hay rutas por barrios, colas amables y un ambiente muy local.
+        </p>
+        <p class="fiestas__text">
+          El mes culmina con la <strong>Feria de Córdoba</strong> en el recinto de El Arenal: casetas abiertas al público, luces, atracciones y música.
+          Las fechas oficiales varían (normalmente a finales de mayo). La web municipal publica programa, buses especiales y logística cada edición.
+        </p>
+        <ul class="fiestas__links">
+          <li><a href="https://www.turismodecordoba.org/1esp-cruces-de-mayo-de-cordoba" target="_blank" rel="noopener">Cruces de Mayo — Turismo Córdoba</a></li>
+          <li><a href="https://www.turismodecordoba.org/festival-de-los-patios-cordobeses" target="_blank" rel="noopener">Fiesta de los Patios — Turismo Córdoba</a></li>
+          <li><a href="https://ich.unesco.org/en/RL/fiesta-of-the-patios-in-cordova-00846" target="_blank" rel="noopener">UNESCO — Fiesta de los Patios</a></li>
+          <li><a href="https://www.turismodecordoba.org/1esp-la-feria-de-cordoba" target="_blank" rel="noopener">Feria de Córdoba — Turismo Córdoba</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/fiestas-mayo.jpg" alt="Cruces, Patios y Feria de Córdoba durante el mes de mayo">
+          <figcaption class="media__caption">
+            <span class="media__title">Semana Santa Cordobesa</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://static.eldiario.es/clip/a29e765a-cc8f-409a-9b92-784b1655fa39_16-9-discover-aspect-ratio_default_0.webp" target="_blank" rel="noopener nofollow">cordopolis.eldiario.es</a></cite>.
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Semana Santa -->
+    <article id="semana-santa" class="o-split fiestas__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="fiestas__subtitle">Semana Santa</h3>
+        <p class="fiestas__text">
+          Entre Domingo de Ramos y Domingo de Resurrección, las cofradías recorren el casco histórico con pasos e imágenes devocionales.
+          Cambian itinerarios y horarios cada año, así que conviene revisar el programa oficial y las actualizaciones de la Agrupación de Hermandades y Cofradías.
+        </p>
+        <p class="fiestas__text">
+          Si quieres una experiencia cómoda, localiza la “carrera oficial” y consulta accesos, movilidad y probables aglomeraciones según el día.
+          Algunos medios publican guías con resúmenes de horarios y trazados.
+        </p>
+        <ul class="fiestas__links">
+          <li><a href="https://www.turismodecordoba.org/1esp-semana-santa-de-cordoba" target="_blank" rel="noopener">Semana Santa — Turismo Córdoba</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/semana-santa-cordoba.jpg" alt="Procesión de Semana Santa en el casco histórico de Córdoba">
+          <figcaption class="media__caption">
+            <span class="media__title">Semana Santa Cordobesa</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/2/27/Entrada_Triunfal_%28C%C3%B3rdoba%29.jpg" target="_blank" rel="noopener nofollow">Pablo22488</a></cite>.
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">CC BY-SA 4.0</a>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Noche Blanca del Flamenco -->
+    <article id="noche-blanca" class="o-split fiestas__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="fiestas__subtitle">La Noche Blanca del Flamenco (junio)</h3>
+        <p class="fiestas__text">
+          Una noche al año, plazas y rincones del centro se convierten en escenarios gratuitos de cante, toque y baile hasta el amanecer.
+          Es uno de los eventos flamencos más singulares por formato y participación pública.
+        </p>
+        <p class="fiestas__text">
+          Los escenarios se reparten por el casco histórico y la programación mezcla figuras consagradas y propuestas actuales.
+          La edición 2025 se celebró la noche del 21 al 22 de junio con múltiples conciertos de acceso libre.
+        </p>
+        <ul class="fiestas__links">
+          <li><a href="https://nocheblancadelflamenco.cordoba.es/" target="_blank" rel="noopener">Sitio oficial — Noche Blanca</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/noche-blanca-flamenco.jpg" alt="Público asistiendo a un concierto de la Noche Blanca del Flamenco">
+          <figcaption class="media__caption">
+            <span class="media__title">La Noche Blanca del Flamenco</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/4/41/Noche_Blanca_del_Flamenco_2008_%281%29.jpg" target="_blank" rel="noopener nofollow">ABACERÍA DEL SUR</a></cite>.
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+            </small>
+          </figcaption>
+      </div>
+    </article>
+
+    <!-- Festival de la Guitarra -->
+    <article id="festival-guitarra" class="o-split fiestas__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="fiestas__subtitle">Festival de la Guitarra (julio)</h3>
+        <p class="fiestas__text">
+          Referente internacional del verano cordobés: conciertos, cursos y clases magistrales en torno a la guitarra —clásica, flamenca, eléctrica—,
+          con artistas nacionales e internacionales.
+        </p>
+        <p class="fiestas__text">
+          El Teatro de la Axerquía y otros espacios acogen cada año una programación amplia.
+          La organización anuncia fechas y venta de entradas en los portales oficiales.
+        </p>
+        <ul class="fiestas__links">
+          <li><a href="https://teatrocordoba.es/festival-guitarra/" target="_blank" rel="noopener">Festival — Teatro Córdoba</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/festival-guitarra-cordoba.jpg" alt="Logo del Festival de la Guitarra de Córdoba">
+          <figcaption class="media__caption">
+            <span class="media__title">Festival del la Guitarra de Córdoba</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fteatrocordoba.es%2Ffestival-guitarra-cordoba%2F&psig=AOvVaw10JNkTCEW1UUL_31zotql8&ust=1760957872521000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOjWz7eNsJADFQAAAAAdAAAAABAE" target="_blank" rel="noopener nofollow">Teatrocordoba.es</a></cite>.
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Festival Flora -->
+    <article id="festival-flora" class="o-split fiestas__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="fiestas__subtitle">Flora (Octubre)</h3>
+        <p class="fiestas__text">
+          FLORA convierte, cada octubre, varios patios y edificios históricos de Córdoba en escenarios de
+          <strong>arte floral contemporáneo</strong>. Equipos internacionales producen instalaciones que sólo existen durante el festival
+          (entrada gratuita), dialogando con la arquitectura y el patrimonio de la ciudad. El certamen, creado y organizado por
+          Zizai Cultura, se ha consolidado como una referencia mundial del género.
+        </p>
+        <ul class="fiestas__links">
+          <li><a href="https://www.turismodecordoba.org/flora-festival-internacional-de-las-flores/" target="_blank" rel="noopener">Festival — Flora</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/flora-cordoba.jpg" alt="Muestra del Festival Flora de Córdoba">
+          <figcaption class="media__caption">
+            <span class="media__title">Festival Flora</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fteatrocordoba.es%2Ffestival-guitarra-cordoba%2F&psig=AOvVaw10JNkTCEW1UUL_31zotql8&ust=1760957872521000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOjWz7eNsJADFQAAAAAdAAAAABAE" target="_blank" rel="noopener nofollow">festivalesdelsuro.com</a></cite>.
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <!-- CULTURA -->
+  <section id="cultura" class="o-container section cultura" aria-labelledby="cultura-title">
+    <h2 id="cultura-title" class="section__title">Cultura</h2>
+
+    <div class="cultura__intro u-flow">
+      <p class="cultura__text">
+        Córdoba combina tradición popular, flamenco y programación estable de artes escénicas. La ciudad respira patios y plazas,
+        pero también conciertos, teatro y museos activos durante todo el año. Aquí tienes algunas claves para orientarte.
+      </p>
+    </div>
+
+    <!-- Flamenco y patrimonio vivo -->
+    <article class="o-split cultura__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="cultura__subtitle">Flamenco y patrimonio vivo</h3>
+        <p class="cultura__text">
+          Además de la <strong>Fiesta de los Patios</strong> —Patrimonio Cultural Inmaterial por la UNESCO—,
+          muchos patios acogen cante y toque en temporada, manteniendo una cultura vecinal abierta al visitante.
+          El flamenco tiene presencia en <strong>La Posada del Potro</strong> (Centro Flamenco Fosforito), con
+          actividades, muestras y piezas que ayudan a situar sus palos y su historia local.
+        <ul class="cultura__links">
+          <li><a href="https://ich.unesco.org/en/RL/fiesta-of-the-patios-in-cordova-00846" target="_blank" rel="noopener">UNESCO — Fiesta de los Patios</a></li>
+          <li><a href="https://www.artencordoba.com/en/flamenco-centre-fosforito/" target="_blank" rel="noopener">Centro Flamenco Fosforito (Posada del Potro)</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/posada-del-potro.jpg" alt="Posada del Potro, sede del Centro Flamenco Fosforito">
+          <figcaption class="media__caption">
+            <span class="media__title">Posada del Potro</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://www.flickr.com/photos/palacio_orive/" target="_blank" rel="noopener nofollow">Delegación de Cultura y Patrimonio Histórico Ayuntamiento de Córdoba </a></cite>
+              Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Música y artes escénicas -->
+    <article class="o-split cultura__bloque">
+      <div class="o-split__content u-flow">
+        <h3 class="cultura__subtitle">Música y artes escénicas</h3>
+        <p class="cultura__text">
+          La <strong>Orquesta de Córdoba</strong> ofrece temporada estable en distintos recintos (Gran Teatro, Teatro Góngora, Axerquía),
+          con sinfónicos, ciclos familiares y colaboraciones. Nació en 1992 con Leo Brouwer como primer director, y mantiene hoy
+          una programación diversa. Consulta siempre la cartelera actualizada del IMAE.
+        </p>
+        <ul class="cultura__links">
+          <li><a href="https://orquestadecordoba.org/" target="_blank" rel="noopener">Orquesta de Córdoba — web oficial</a></li>
+          <li><a href="https://teatrocordoba.es/programacion/" target="_blank" rel="noopener">IMAE Teatro Córdoba — Programación</a></li>
+        </ul>
+      </div>
+      <div class="o-split__media">
+        <figure class="media">
+          <img class="media__img" src="./assets/images/gran-teatro.jpg" alt="Gran Teatro de Córdoba">
+          <figcaption class="media__caption">
+            <span class="media__title">Gran Teatro de Córdoba</span>
+            <small class="media__credit">
+              Foto: <cite><a href="https://teatrocordoba.es/wp-content/uploads/2020/10/gran-teatro-1-1.jpg" target="_blank" rel="noopener nofollow">teatrocordoba.es </a></cite>
+            </small>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <!-- PERSONAJES -->
+  <section id="personajes" class="o-container section personajes" aria-labelledby="personajes-title">
+  <h2 id="personajes-title" class="section__title">Personajes</h2>
+
+  <p class="personajes__intro">
+    Córdoba ha sido cuna o casa de pensadores, artistas y científicos que han marcado épocas muy distintas.
+    Esta selección te sirve para poner en contexto nombres que verás en plazas, teatros y estatuas durante la visita.
+  </p>
+
+  <!-- Maimónides -->
+  <article id="pers-maimonides" class="o-split personajes__item">
+    <div class="o-split__media">
+      <figure class="media personajes__media">
+        <img class="media__img" src="./assets/images/estatua-maimonides.jpg" alt="Estatua de Maimónides en la Plaza de Tiberíades de la Judería">
+        <figcaption class="media__caption">
+          <span class="media__title">Maimónides</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/2/2a/Maim%C3%B2nides.jpg" target="_blank" rel="noopener nofollow">Via Wikimedia Commons</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="o-split__content u-flow">
+      <h3 class="o-media__title">Maimónides (1138–1204)</h3>
+      <p>
+        Filósofo, médico y jurista judío nacido en Córdoba. Autor de la <em>Guía de perplejos</em> y del
+        <em>Mishné Torá</em>, puente entre pensamiento clásico, tradición judía y filosofía árabe.
+        Su estatua está en la <strong>Plaza de Tiberíades</strong>, en plena Judería.
+      </p>
+    </div>
+  </article>
+
+  <!-- Séneca -->
+  <article id="pers-seneca" class="o-split o-split--reverse personajes__item">
+    <div class="o-split__media">
+      <figure class="media personajes__media">
+        <img class="media__img" src="./assets/images/estatua-seneca.jpg" alt="Estatua de Séneca en Córdoba">
+        <figcaption class="media__caption">
+          <span class="media__title">Lucio Anneo Séneca</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/4/45/Estatua_de_S%C3%A9neca_%28C%C3%B3rdoba%29_002.JPG" target="_blank" rel="noopener nofollow">Americo Toledano</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="o-split__content u-flow">
+      <h3 class="o-media__title">Lucio Anneo Séneca (c. 4 a. C.–65 d. C.)</h3>
+      <p>
+        Filósofo estoico, político y escritor romano, <strong>nacido en Córdoba</strong>. Sus cartas y tratados
+        han influido en la ética y la literatura occidental. La ciudad conserva su memoria en nombres
+        de calles y referencias culturales.
+      </p>
+    </div>
+  </article>
+
+  <!-- Luis de Góngora -->
+  <article id="pers-gongora" class="o-split personajes__item">
+    <div class="o-split__media">
+      <figure class="media personajes__media">
+        <img class="media__img" src="./assets/images/estatua-gongora.jpg" alt="Estatua de Luis de Góngora en Córdoba">
+        <figcaption class="media__caption">
+          <span class="media__title">Luis de Góngora</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://alfayomega.es/wp-content/uploads/2023/12/Gongora_8107473.jpg" target="_blank" rel="noopener nofollow">alfayomega.es</a></cite>.
+          </small>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="o-split__content u-flow">
+      <h3 class="o-media__title">Luis de Góngora (1561–1627)</h3>
+      <p>
+        Poeta del Siglo de Oro y máximo exponente del culteranismo o <em>gongorismo</em>. Nació en Córdoba
+        y su obra, de lenguaje elaborado y musicalidad, marcó a generaciones posteriores.
+        El <strong>Teatro Góngora</strong> lleva su nombre.
+      </p>
+    </div>
+  </article>
+
+  <!-- Averroes -->
+  <article id="pers-averroes" class="o-split o-split--reverse personajes__item">
+    <div class="o-split__media">
+      <figure class="media personajes__media">
+        <img class="media__img" src="./assets/images/estatua-averroes.jpg" alt="Escultura de Averroes en Córdoba">
+        <figcaption class="media__caption">
+          <span class="media__title">Averroes</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/a/a2/Statue_of_Averroes_in_C%C3%B3rdoba%2C_Spain.jpg" target="_blank" rel="noopener nofollow">Saleemzohaib</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="o-split__content u-flow">
+      <h3 class="o-media__title">Averroes / Ibn Rushd (1126–1198)</h3>
+      <p>
+        Filósofo, médico y cadí cordobés. Sus comentarios a Aristóteles influyeron decisivamente en la escolástica europea
+        y en el pensamiento medieval. En Córdoba encontrarás referencias y esculturas en su memoria.
+      </p>
+    </div>
+  </article>
+
+  <!-- Julio Romero de Torres -->
+  <article id="pers-julio-romero" class="o-split personajes__item">
+    <div class="o-split__media">
+      <figure class="media personajes__media">
+        <img class="media__img" src="./assets/images/estatua-julio-romero-torres.jpg" alt="Estatua de Julio Romero de Torres en Córdoba">
+        <figcaption class="media__caption">
+          <span class="media__title">Julio Romero de Torres</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://www.artencordoba.com//fotos/blog-viejo/wp-content/uploads/2014/12/Monumento-Julio-Romero-de-Torres.Cordoba.jpg" target="_blank" rel="noopener nofollow">artencordoba.com</a></cite>.
+          </small>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="o-split__content u-flow">
+      <h3 class="o-media__title">Julio Romero de Torres (1874–1930)</h3>
+      <p>
+        Pintor cordobés de gran popularidad en el primer tercio del siglo XX. Su iconografía —figura femenina,
+        costumbrismo y símbolos locales— es parte de la memoria visual de la ciudad. El
+        <strong>Museo Julio Romero de Torres</strong> conserva su colección de referencia.
+      </p>
+    </div>
+  </article>
+</section>
+
+
+>>>>>>> pec1
   <!-- MONUMENTOS (anclas de destino de imprescindibles) -->
   <section id="monumentos" class="o-container section monumentos" aria-labelledby="monumentos-title">
     <h2 id="monumentos-title" class="section__title">Monumentos</h2>
 
+<<<<<<< HEAD
+=======
+    <!-- MEZQUITA–CATEDRAL -->
+>>>>>>> pec1
     <article id="mon-mc" class="monumento" aria-labelledby="mon-mc-title">
       <h3 id="mon-mc-title" class="monumento__title">Mezquita–Catedral</h3>
 
@@ -197,7 +1232,11 @@
       <!-- Imagen 1: Sala hipóstila -->
       <figure class="media monumento__media">
         <img class="media__img" src="./assets/images/mc-hipostila.jpg"
+<<<<<<< HEAD
             alt="Sala hipóstila de la Mezquita–Catedral con arcos bicolores en dos niveles">
+=======
+             alt="Sala hipóstila de la Mezquita–Catedral con arcos bicolores en dos niveles">
+>>>>>>> pec1
         <figcaption class="media__caption">
           <span class="media__title">Sala hipóstila</span>
           <small class="media__credit">
@@ -210,9 +1249,15 @@
       <!-- Imagen 2: Mihrab -->
       <figure class="media monumento__media">
         <img class="media__img" src="./assets/images/mc-mihrab.jpg"
+<<<<<<< HEAD
            alt="Mihrab-cámara con mosaicos dorados y mármoles labrados en la Mezquita–Catedral">
         <figcaption class="media__caption">
           <span class="media__title">Sala Miharb</span>
+=======
+             alt="Mihrab-cámara con mosaicos dorados y mármoles labrados en la Mezquita–Catedral">
+        <figcaption class="media__caption">
+          <span class="media__title">Mihrab (s. X)</span>
+>>>>>>> pec1
           <small class="media__credit">
             Foto: <cite><a href="https://educahistoria.com/descubre-la-mezquita-de-cordoba-mas-que-un-simbolo-de-fe-un-puente-entre-culturas/" target="_blank" rel="noopener nofollow">educahistoria</a></cite>.
             Licencia: Todos los derechos reservados.
@@ -222,17 +1267,57 @@
 
       <!-- Imagen 3: Patio y torre -->
       <figure class="media monumento__media">
+<<<<<<< HEAD
         <img class="media__img" src="./assets/images/mc-exterior-alcazar.jpg"
           alt="Alcázar de los Reyes Cristianos de Córdoba">
         <figcaption class="media__caption">
           <span class="media__title">Sala hipóstila</span>
           <small class="media__credit">
             Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/0/01/Alc%C3%A1zar_de_los_Reyes_Cristianos_%2814149424950%29.jpg" target="_blank" rel="noopener nofollow">Pablo Trabattoni</a></cite>.
+=======
+        <img class="media__img" src="./assets/images/mc-patio-naranjos.jpg"
+             alt="Patio de los Naranjos y torre-campanario de la Mezquita–Catedral de Córdoba">
+        <figcaption class="media__caption">
+          <span class="media__title">Patio y torre</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Patio_de_los_Naranjos%2C_Mezquita_de_C%C3%B3rdoba.jpg" target="_blank" rel="noopener nofollow">Erinc Salor</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- Alcázar-->
+    <article id="mon-alcazar" class="monumento" aria-labelledby="mon-alcazar-title">
+      <h3 id="mon-alcazar-title" class="monumento__title">Alcázar de los Reyes Cristianos</h3>
+
+      <p class="monumento__text">
+        Fortaleza y palacio a un tiempo, el Alcázar de los Reyes Cristianos forma parte del <em>Centro Histórico de Córdoba</em> reconocido por la UNESCO. Su fisonomía actual se consolidó a partir del siglo XIV en época castellana, sobre estratos previos romanos, visigodos y andalusíes. Los poderosos muros, las torres y los jardines aterrazados describen la función militar y representativa del conjunto, a la vez que muestran la continuidad histórica del enclave junto al Guadalquivir.
+      </p>
+
+      <p class="monumento__text">
+        A lo largo de los siglos, el Alcázar fue residencia y sede de poder, sufrió reformas y cambios de uso, y conservó espacios singulares como los baños de tradición mudéjar y los jardines con albercas y canales. En época moderna llegó a albergar dependencias administrativas y, durante parte de la Edad Moderna, funciones judiciales, antes de su recuperación patrimonial contemporánea. Hoy, la visita recorre salas históricas, torres y un paisaje de patios y estanques que se asoman a la ribera.
+      </p>
+
+      <p class="monumento__text">
+        La lectura histórico-artística del Alcázar se completa con la escala de sus jardines: ejes de agua, arbolado y parterres que estructuran un paseo escénico. El relato monumental se integra, además, en la narrativa urbana del centro histórico de Córdoba, donde la UNESCO subraya el papel del Alcázar dentro del sistema defensivo y ceremonial de la ciudad tras la conquista de 1236. Consulta información actualizada (horarios, eventos y accesos) en portales oficiales.
+      </p>
+
+      <!-- Imagen 1 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/alcazar-general.jpg"
+             alt="Vista del Alcázar de los Reyes Cristianos con jardines, albercas y torres">
+        <figcaption class="media__caption">
+          <span class="media__title">Jardines y torres del Alcázar</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Cordoba-6_%2848026780817%29.jpg" target="_blank" rel="noopener nofollow">Ajay Suresh</a></cite>.
+>>>>>>> pec1
             Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
           </small>
         </figcaption>
       </figure>
 
+<<<<<<< HEAD
     </article>
 
 
@@ -260,14 +1345,164 @@
       <li class="info__item">Transporte: AVE/Avlo; casco histórico a pie.</li>
       <li class="info__item">Clima: mejor primavera/otoño; revisar AEMET.</li>
     </ul>
+=======
+      <!-- Imagen 2 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/alcazar-banos.jpg"
+             alt="Baños del Alcázar de los Reyes Cristianos, salas abovedadas de tradición mudéjar">
+        <figcaption class="media__caption">
+          <span class="media__title">Baños históricos</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/8/81/Ba%C3%B1os_reales_-_Alc%C3%A1zar_de_los_Reyes_Cristianos.jpg" target="_blank" rel="noopener nofollow">Shaun Dunphy</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+          </small>
+        </figcaption>
+      </figure>
+
+      <!-- Imagen 3 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/alcazar-murallas.jpg"
+             alt="Detalle de las murallas y una de las torres del Alcázar de los Reyes Cristianos">
+        <figcaption class="media__caption">
+          <span class="media__title">Murallas y torre</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/f/f0/Wall_of_the_Alcazar_Fortress_-_Cordoba%2C_Spain_-_02.jpg" target="_blank" rel="noopener nofollow">Adam Jones</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- LA JUDERÍA -->
+    <article id="mon-juderia" class="monumento" aria-labelledby="mon-juderia-title">
+      <h3 id="mon-juderia-title" class="monumento__title">La Judería</h3>
+
+      <p class="monumento__text">
+        La Judería de Córdoba es el histórico barrio judío integrado en el <em>Centro Histórico</em> de la ciudad. Presenta un trazado medieval de calles estrechas, adarves y pequeñas plazas, próximo a la Mezquita-Catedral. Su identidad urbana y patrimonial forma parte del bien inscrito por la UNESCO en 1994.
+      </p>
+
+      <p class="monumento__text">
+        En este ámbito se conserva la <strong>Sinagoga de Córdoba</strong> (1315), un pequeño oratorio de estilo mudéjar con inscripciones hebreas y estucos decorativos, hoy espacio museístico. Es la única sinagoga medieval de Andalucía y una de las mejor conservadas de España.
+      </p>
+
+      <p class="monumento__text">
+        La visita a la Judería permite comprender la convivencia histórica de tradiciones judía, islámica y cristiana que define a Córdoba. Además de la sinagoga y los adarves, el recorrido enlaza con otros hitos del entorno como la Mezquita-Catedral y la célebre Calleja de las Flores.
+      </p>
+
+      <!-- Imagen 1 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/juderia-calle.jpg"
+             alt="Calle estrecha y encalada de la Judería de Córdoba, con rejas y macetas">
+        <figcaption class="media__caption">
+          <span class="media__title">Calle de la Judería</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/6/67/Calleja_de_las_Flores%2C_C%C3%B3rdoba%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_31-33_HDR.jpg" target="_blank" rel="noopener nofollow">Diego Delso</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="license noopener">CC BY-SA 4.0</a>
+          </small>
+        </figcaption>
+      </figure>
+
+      <!-- Imagen 2 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/sinagoga-interior.jpg"
+             alt="Interior de la Sinagoga de Córdoba con estucos mudéjares e inscripciones hebreas">
+        <figcaption class="media__caption">
+          <span class="media__title">Sinagoga de Córdoba (1315)</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/a/ab/Sinagoga_de_C%C3%B3rdoba_%28Espa%C3%B1a%29.jpg" target="_blank" rel="noopener nofollow">JP Puerta</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+          </small>
+        </figcaption>
+      </figure>
+
+      <!-- Imagen 3 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/puerta-almodovar.jpg"
+             alt="Acceso a la Judería de Córdoba junto a la muralla, entorno de la Puerta de Almodóvar">
+        <figcaption class="media__caption">
+          <span class="media__title">Acceso a la Judería</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/C%C3%B3rdoba_Puerta_de_Almod%C3%B3var_seen_from_the_west.jpg" target="_blank" rel="noopener nofollow">Ymblanter</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="license noopener">CC BY-SA 4.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- MEDINA AZAHARA -->
+    <article id="mon-medina" class="monumento" aria-labelledby="mon-medina-title">
+      <h3 id="mon-medina-title" class="monumento__title">Medina Azahara (Madinat al-Zahra)</h3>
+
+      <p class="monumento__text">
+        Medina Azahara fue la gran ciudad palatina del califato omeya de al-Ándalus, fundada por ʿAbd al-Raḥmān III en el siglo X a las afueras de Córdoba, con funciones cortesanas, administrativas y residenciales. Aunque su vida fue relativamente breve y quedó arruinada durante la fitna (1010–1013), el yacimiento conserva palacios, jardines, mezquita y tramas de servicio que permiten comprender la escala y el programa ideológico del califato. En 2018 el conjunto fue inscrito por la UNESCO como <em>Caliphate City of Medina Azahara</em>.
+      </p>
+
+      <p class="monumento__text">
+        El trazado aterrazado de la ciudad, con pabellones ceremoniales como el salón de recepción de ʿAbd al-Raḥmān III, áreas residenciales, talleres y baños, muestra una planificación compleja abastecida por acueductos y con decoración lujosa (mármoles, estucos, atauriques). Las excavaciones sistemáticas comenzaron en 1911 y, pese a que sólo una parte del recinto total (≈112 ha) se ha exhumado, el área visitable ofrece una lectura coherente del poder califal.
+      </p>
+
+      <p class="monumento__text">
+        La visita se articula entre el <strong>Museo y Centro de Interpretación</strong> —con colección y audiovisuales— y la <strong>zona arqueológica</strong>, conectadas mediante lanzadera. El conjunto se sitúa a unos <strong>8 km al oeste de Córdoba</strong>, en las estribaciones de Sierra Morena; se puede acceder en vehículo propio o mediante bus lanzadera/servicio concertado (ver detalles y horarios en la web oficial).
+      </p>
+
+      <!-- Imagen 1 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/medina-azahara-general.jpg"
+             alt="Vista general de Medina Azahara con terrazas y restos de palacios">
+        <figcaption class="media__caption">
+          <span class="media__title">Terrazas del conjunto</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/1/10/Medina_Azahara_010.jpg" target="_blank" rel="noopener nofollow">Losmininos</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+          </small>
+        </figcaption>
+      </figure>
+
+      <!-- Imagen 2 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/medina-azahara-salon-al-rahman-iii.jpg"
+             alt="Salón de recepciones de Abd al-Raḥmán III con columnas y relieves de ataurique">
+        <figcaption class="media__caption">
+          <span class="media__title">Salón califal</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/e/eb/Cordoba_-_Medina_Azahara_13.jpg" target="_blank" rel="noopener nofollow">Zarateman</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="license noopener">CC BY-SA 3.0</a>
+          </small>
+        </figcaption>
+      </figure>
+
+      <!-- Imagen 3 -->
+      <figure class="media monumento__media">
+        <img class="media__img" src="./assets/images/medina-azahara-centro-interpretacion.jpg"
+             alt="Museo y Centro de Interpretación de Medina Azahara con piezas arqueológicas">
+        <figcaption class="media__caption">
+          <span class="media__title">Museo y centro de interpretación</span>
+          <small class="media__credit">
+            Foto: <cite><a href="https://upload.wikimedia.org/wikipedia/commons/b/b6/Centro_de_interpretaci%C3%B3n_de_Madinat_Al-Zahra_%28C%C3%B3rdoba%2C_Espa%C3%B1a%29.jpg" target="_blank" rel="noopener nofollow">fraboof</a></cite>.
+            Licencia: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="license noopener">CC BY-SA 2.0</a>
+          </small>
+        </figcaption>
+      </figure>
+    </article>
+>>>>>>> pec1
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="o-container site-footer__inner">
+<<<<<<< HEAD
       <p class="site-footer__text">© Tu Nombre — Créditos y licencias en el documento de entrega.</p>
       <a class="site-footer__top" href="#intro">Volver arriba</a>
     </div>
   </footer>
 </body>
 </html>
+=======
+      <p class="site-footer__text">Santiago Martín-Palomo García — PEC 1 - Herramientas HTML y CSS 2 - M4.258 </p>
+      <p class="site-footer__text">Máster en Desarrollo de sitos y aplicaciones Web - Universitat Oberta de Catalunya.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+>>>>>>> pec1

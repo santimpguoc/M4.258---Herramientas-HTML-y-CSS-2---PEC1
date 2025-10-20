@@ -1,0 +1,68 @@
+/* Tarjetas usadas en “Imprescindibles” y “Museos” */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.card {
+  display: flex;                 /* contenedor vertical */
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid $color-borde;
+  border-radius: $radius-md;
+  overflow: hidden;              /* recorta imagen dentro de la tarjeta */
+  text-decoration: none;
+  color: inherit;
+  transition: transform .12s ease, box-shadow .12s ease;
+  height: 100%;                  /* rellena celda de la grid */
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgb(0 0 0 / 6%);
+  }
+
+  &__media {
+    position:relative; 
+    display:block; 
+    margin:0; 
+    aspect-ratio:16/9; 
+    overflow:hidden;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute; 
+    left:0; 
+    right:0; 
+    bottom:0;
+    padding: $space-sm $space-md;
+    background: linear-gradient(to top, rgb(0 0 0 / 55%), rgb(0 0 0 / 0%));
+    color:#fff; 
+    font-weight:700; 
+    font-size: 1em;
+    margin:0;
+  }
+
+  .credit {
+    display: block;
+    font-weight: 400;
+    font-size: .75rem;
+    color: rgba($color-texto, .7);
+    margin-top: .25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    text-align: center;
+  }
+
+  &__text {
+    padding: 0 $space-md $space-md;
+    line-height: $lh-base;
+    margin-top: $space-sm;       /* separa texto del título */
+    color: $color-texto;
+  }
+}

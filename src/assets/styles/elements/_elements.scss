@@ -1,0 +1,62 @@
+// ===============================================
+// Elements (estilos a etiquetas HTML “tal cual”)
+// Aquí NO metemos clases BEM. Sólo etiquetas.
+// ===============================================
+
+@use "../settings/settings" as *;
+
+// Titulares
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-block: $space-lg $space-md; // aire arriba/abajo
+}
+
+h1 { font-size: $fs-h1; }
+h2 { font-size: $fs-h2; }
+h3 { font-size: $fs-h3; }
+
+// Párrafos y texto básico
+p {
+  margin-block: 0 $space-md;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  color: $color-texto;
+}
+
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+// Figuras e imágenes con pie
+img { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+figure { 
+  margin: 0;
+}
+
+figcaption {
+  font-size: $fs-caption;
+  color: $color-texto-suave;
+  margin-top: $space-xs;
+}
+
+// Enlaces “de verdad” (color y foco mínimos a nivel de elemento)
+a[href] {
+  color: $color-brand;
+  text-decoration: underline;
+  text-underline-offset: .1em;
+
+  &:hover {
+    color: $color-brand-osc;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand;
+    outline-offset: 2px;
+  }
+}
+

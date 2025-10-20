@@ -1,0 +1,134 @@
+/* Cabecera superior con marca y menú (responsive con hamburguesa) */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  border-bottom: 1px solid $color-borde;
+
+  &__inner {
+    @include container($container-max, $space-md);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 3.25rem;
+    gap: $space-sm;
+    position: relative; /* base para el panel móvil */
+  }
+
+  &__brand {
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none !important;
+    color: $color-texto;
+  }
+
+  /* Botón hamburguesa (visible en móvil/mediana) */
+  &__toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-borde;
+    border-radius: $radius-sm;
+    background: #fff;
+    cursor: pointer;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: background .15s ease, border-color .15s ease;
+    }
+
+    &:hover { 
+      background: $color-arena; 
+    }
+
+    &-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin-inline: auto;
+      background: $color-texto;
+      border-radius: 1px;
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition: transform .15s ease, opacity .15s ease;
+      }
+    }
+  }
+
+  /* Icono animado cuando aria-expanded="true" en el botón */
+  [aria-expanded="true"] .navbar__toggle-bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  [aria-expanded="true"] .navbar__toggle-bar:nth-child(2) { opacity: 0; }
+  [aria-expanded="true"] .navbar__toggle-bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+  /* Panel de menú móvil (el atributo [hidden] lo oculta por defecto) */
+  &__menu {
+    position: absolute;
+    inset-inline: 0;
+    top: calc(100% + 1px);
+    background: #fff;
+    border-bottom: 1px solid $color-borde;
+    padding: $space-sm;
+    display: grid;
+    gap: 4px;
+
+    /* Escritorio: fila normal, siempre visible y sin panel */
+    @include respond(lg) {
+      position: static;
+      display: flex !important;
+      gap: $space-sm;
+      background: transparent;
+      border: 0;
+      padding: 0;
+    }
+
+    @include respond(md) {
+      gap: $space-md;
+    }
+  }
+
+  /* Ocultar de verdad cuando el <nav> lleva hidden en tamaños móviles/medios */
+  .navbar__menu[hidden] { 
+    display: none !important; 
+  }
+
+  /* En escritorio, aunque tenga hidden en el HTML, lo mostramos en línea */
+  @include respond(lg) {
+    .navbar__menu[hidden] { 
+      display: flex !important; 
+    }
+  }
+
+  &__link {
+    text-decoration: none !important;
+    color: $color-texto;
+    padding: .25rem .5rem;
+    border-radius: $radius-sm;
+
+    &:hover { color: $color-brand; }
+
+    &--active,
+    &[aria-current="page"] {
+      color: #fff;
+      background: $color-brand;
+    }
+
+    @include respond(lg) {
+      padding: $space-xs $space-sm;
+    }
+  }
+
+  @include respond(lg) {
+    &__toggle { display: none; }
+
+    /* En escritorio, aunque el <nav> tenga hidden por HTML, lo forzamos visible en layout */
+    &__menu[hidden] { display: flex !important; }
+  }
+}

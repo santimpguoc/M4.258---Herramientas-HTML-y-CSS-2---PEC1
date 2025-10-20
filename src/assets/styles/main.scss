@@ -3,31 +3,46 @@
  * Do not include SCSS code in this file.
  */
 
- /**
- * Import dependencies
- */
-@use "dependencies";
+/* Capas que no emiten CSS */
 
 /**
- * Import layouts
- * It's a best practice to use a different partial for each page
+* Importar nivel settings 
+*/
+@use 'settings/settings';
+
+ /**
+ * Import tools
  */
+@use "tools/tools";
 
-// @use "layouts/home";
-
-/* Exponer variables globales */
-@use 'settings/variables';
-
-/* Tools con namespace */
-// @use 'tools/functions' as fn;
-// @use 'tools/mixins' as mx;
+// =============================================================
 
 /* Capas que emiten CSS */
-// @use 'generic/reset';
-// @use 'elements/base';
-@use 'objects/home';
-@use 'utilities/helpers';
 
+ /**
+ * Import generic
+ */
+@use "generic/generic";
+
+ /**
+ * Import elements
+ */     
+@use "elements/elements";
+
+/**
+ * Import objects
+ */
+@use "objects/objects";
+
+/**
+* Import components
+*/  
+@use "components/components";
+
+/**
+* Import utilities (clases helper)
+*/  
+// @use 'utilities/utilities';
 
 
 /**

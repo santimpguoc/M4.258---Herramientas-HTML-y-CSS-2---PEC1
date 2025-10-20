@@ -1,0 +1,31 @@
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+/* Ajustes SOLO para la sección de Gastronomía */
+.gastronomia {
+  /* Cada bloque (artículo) de la lista */
+  .gastronomia__item {
+    /* En móvil todo se queda igual (100% ancho).
+       Reducimos SOLO en pantallas medianas o mayores. */
+    @include respond(md) {
+      /* Centra la figura dentro de su columna */
+      .o-split__media {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Limita el ancho visual de la figura */
+      .gastronomia__media {
+        max-width: 420px;        
+        width: 70%;
+      }
+
+      /* La imagen rellena esa anchura limitada sin deformarse */
+      .gastronomia__media .media__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

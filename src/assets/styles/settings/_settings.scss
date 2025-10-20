@@ -1,0 +1,51 @@
+// ===============================================
+// Settings (variables del proyecto)
+// ===============================================
+
+// --- Colores principales del sitio ---
+$color-fondo: #f7f3e9; // fondo general (tono arena claro)
+$color-texto: #2b2b2b; // texto normal
+$color-texto-suave: #555; // para pies de foto, créditos, notas menos importantes
+$color-brand: #b8860b; // “albero” para acentos (botones, enlaces destacados)
+$color-brand-osc: #8a6709; // variante un poco más oscura
+
+// --- Apoyos suaves (secciones y bordes) ---
+$color-arena: #f2eadf; // bloques y tarjetas sobre el fondo
+$color-borde: rgb(0 0 0 / 10%); // líneas finas, divisores
+
+// --- Estados de texto ---
+$color-info: #2d6cdf; // notas/ayuda (info)
+$color-aviso: #e6a700; // advertencias suaves (aviso)
+
+// --- Tipografía básica ---
+$font-base: roboto, arial, sans-serif;
+$fs-base: 16px;     // tamaño base de letra
+$fs-h1: clamp(2rem, 4vw, 3rem);
+$fs-h2: clamp(1.5rem, 3vw, 2rem);
+$fs-h3: clamp(1.25rem, 2.5vw, 1.5rem);
+$lh-base: 1.6;      // interlínea cómoda
+
+// --- Espaciado rápido (margen/relleno) ---
+$space-xs: .5rem;
+$space-sm: .75rem;
+$space-md: 1rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+
+// --- Bordes redondeados simples ---
+$radius-sm: .375rem;
+$radius-md: .75rem;
+
+// --- Anchos útiles ---
+$container-max: 1100px;   // ancho máximo de .o-container
+$gutter: 1rem;     // separación lateral interna
+
+// --- Tamaños de letra complementarios ---
+$fs-small: 0.875rem;   // ~14px, para textos secundarios
+$fs-caption: 0.8125rem;  // ~13px, para pies de foto / créditos
+
+// Breakpoints (decisión global del proyecto)
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;

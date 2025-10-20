@@ -1,0 +1,35 @@
+/* Figuras con pie reutilizadas */
+
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+.media {
+  margin-block: $space-md;
+
+  &__img {
+    width: 75%;
+    display: block;
+    border-radius: $radius-md;
+    margin: 0 auto;
+  }
+
+  &__caption {
+    font-size: .9rem;
+    color: rgba($color-texto,.75);
+    margin-top: $space-xs;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-xs;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title { font-weight: 700; }
+
+  &__credit a { text-decoration: underline; }
+}
+
+/* Variante de crédito usada en "Personajes" */
+.media--credit .media__caption {
+  font-size: .85rem;
+}

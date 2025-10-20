@@ -1,0 +1,90 @@
+/* Pie de página */
+@use "../settings/settings" as *;
+@use "../tools/tools" as *;
+
+/* Miniatura de vídeo con aspecto “tarjeta de imagen” */
+.c-video-thumb {
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 1px solid $color-borde;
+  border-radius: $radius-md;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 3%);
+  transition: transform .12s ease, box-shadow .12s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgb(0 0 0 / 6%);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Botón de “play” centrado */
+  &__play {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+
+    /* círculo semitransparente */
+    &::before {
+      content: "";
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: rgb(0 0 0 / 45%);
+      box-shadow: 0 2px 8px rgb(0 0 0 / 25%) inset;
+      transition: transform .12s ease, background .12s ease;
+      display: block;
+    }
+
+    /* triángulo de “play” */
+    &::after {
+      content: "";
+      position: absolute;
+
+      /* triángulo con bordes */
+      width: 0; height: 0;
+      border-left: 18px solid #fff;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      transform: translateX(3px);
+    }
+  }
+
+  &:hover &__play::before {
+    transform: scale(1.05);
+    background: rgb(0 0 0 / 55%);
+  }
+
+  /* Etiqueta “Ver vídeo” en la esquina */
+  &__badge {
+    position: absolute;
+    left: $space-sm;
+    bottom: $space-sm;
+    background: rgb(0 0 0 / 65%);
+    color: #fff;
+    font-size: .875rem;
+    line-height: 1;
+    padding: .4rem .6rem;
+    border-radius: $radius-sm;
+  }
+
+  /* Pie de foto */
+  &__caption {
+    display: block;
+    font-size: .875rem;
+    color: rgba($color-texto, .75);
+    margin-top: $space-xs;
+    padding-inline: 2px;
+    text-align: center;;
+  }
+}
