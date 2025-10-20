@@ -6,13 +6,23 @@
   <title>Córdoba – Guía rápida</title>
   <meta name="description" content="Guía breve para descubrir Córdoba: historia, imprescindibles, clima, gastronomía y fiestas." />
   <link rel="stylesheet" href="./assets/styles/main.scss">
+  <script src="./assets/scripts/menu.js" defer></script>
 </head>
 <body>
   <!-- NAVBAR -->
-  <header class="navbar">
+  <header class="navbar" data-nav>
     <div class="navbar__inner">
       <a class="navbar__brand" href="#intro" aria-label="Ir al inicio">Córdoba</a>
-      <nav class="navbar__menu" aria-label="Navegación principal">
+
+      <!-- Botón hamburguesa (solo visible en móvil/mediana) -->
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu">
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav id="main-menu" class="navbar__menu" aria-label="Navegación principal" hidden>
         <a class="navbar__link navbar__link--active" href="#intro" aria-current="page">Intro</a>
         <a class="navbar__link" href="#lugares">Imprescindibles</a>
         <a class="navbar__link" href="#historia">Historia</a>
@@ -22,6 +32,7 @@
         <a class="navbar__link" href="#fiestas">Fiestas</a>
         <a class="navbar__link" href="#cultura">Cultura</a>
         <a class="navbar__link" href="#personajes">Personajes</a>
+        <a class="navbar__link" href="#info">Información</a>
       </nav>
     </div>
   </header>
@@ -44,6 +55,28 @@
         Su tamaño y geografía la hacen ideal para explorarla a pie, permitiendo disfrutar de calles, plazas, monumentos, cultura, gastronomía
         y de sus gentes sin prisas.
       </p>
+
+      <figure class="hero__video">
+        <a
+          class="c-video-thumb"
+          href="https://www.youtube.com/watch?v=Us3hTNxtQ18" 
+          target="_blank" 
+          rel="noopener"
+          aria-label="Ver vídeo promocional de Córdoba en YouTube"
+        >
+          <img
+          class="c-video-thumb__img"
+          src="./assets/images/video-cordoba-thumb.jpg"
+          alt="Miniatura del vídeo promocional de la ciudad de Córdoba"
+          loading="lazy"
+          >
+          <span class="c-video-thumb__play" aria-hidden="true"></span>
+          <span class="c-video-thumb__badge">Ver vídeo</span>
+        </a>
+        <figcaption class="c-video-thumb__caption">
+          Vídeo promocional de Córdoba (YouTube) - UNESCO y Patrimonio Mundial en España
+        </figcaption>
+      </figure>
     </div>
   </section>
 
